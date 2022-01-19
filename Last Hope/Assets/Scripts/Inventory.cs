@@ -10,11 +10,17 @@ public class Inventory
     {
         itemList = new List<Item>();
         AddItem(new Item { itemType = Item.ItemType.KeyLvl11, amount = 1 });
-        Debug.Log(itemList.Count);
+        AddItem(new Item { itemType = Item.ItemType.KeyLvl12, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.KeyLvl13, amount = 1 });
     }
 
     public void AddItem(Item item)
     {
         itemList.Add(item);
+    }
+
+    public List<Item> GetItemList()
+    {
+        return itemList;
     }
 }
