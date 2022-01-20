@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        Debug.Log("Resume");
         pauseMenuUi.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -32,6 +34,7 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+        Debug.Log("pause");
         pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -44,11 +47,13 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 1f;
         Debug.Log("Retour au menu principale");
     }
 
     public void QuitGame()
     {
         Debug.Log("Auto destruction dans 5.. 4.. 3.. 2.. 1.. fuck jai pas exploser");
+        Application.Quit();
     }
 }
