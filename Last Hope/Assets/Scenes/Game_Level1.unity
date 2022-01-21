@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 485471453}
-  duration: 10
+  duration: 900
   currentTime: 10
 --- !u!1 &1091076418
 GameObject:
@@ -618,6 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5846e31147008468861cdbb7fbc533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <inventory>k__BackingField: []
 --- !u!4 &1189678397
 Transform:
   m_ObjectHideFlags: 0
