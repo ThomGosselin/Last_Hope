@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public static class Loader
 {
+    private class LoadingMonoBehaviour: MonoBehaviour { }
+
     public enum Scene
     {
         Intro,
@@ -16,19 +18,42 @@ public static class Loader
     }
 
     private static Action onLoaderCallback;
+    private static AsyncOperation loadingAsyncOperation;
 
     public static void Load(Scene scene)
     {
         //demander au loader de charger la prochaine scene
         onLoaderCallback = () =>
         {
-            SceneManager.LoadScene(scene.ToString());
+            GameObject loadingGameObject = new GameObject("Loading Game Object");
+            loadingGameObject.AddComponent<LoadingMonoBehaviour>().StartCoroutine(LoadSceneAsync(scene));
         };
         //chargement du loading screen
-        SceneManager.LoadScene(Scene.Loading.ToString());
+        SceneManager.LoadSceneAsync(Scene.Loading.ToString());
     }
 
+    private static IEnumerator LoadSceneAsync(Scene scene)
+    {
+        yield return null;
+        loadingAsyncOperation = SceneManager.LoadSceneAsync(scene.ToString());
 
+        while (!loadingAsyncOperation.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    public static float GetLoadingProgress()
+    {
+        if (loadingAsyncOperation != null)
+        {
+            return loadingAsyncOperation.progress;
+        }
+        else
+        {
+            return 1f;
+        }
+    }
 
     public static void LoaderCallback()
     {
