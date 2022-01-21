@@ -40,20 +40,17 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void LoadOptions()
-    {
-        Debug.Log("Je suis un beau menu options");
-    }
+ 
 
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        Debug.Log("Retour au menu principale");
+        Loader.Load(Loader.Scene.Main_Menu);
+        GameIsPaused = false;
     }
 
     public void QuitGame()
     {
-        Debug.Log("Auto destruction dans 5.. 4.. 3.. 2.. 1.. fuck jai pas exploser");
         Application.Quit();
     }
 }
