@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class VolumeManager : MonoBehaviour
+public class OptionsMenu : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     // Start is called before the first frame update
@@ -34,5 +34,10 @@ public class VolumeManager : MonoBehaviour
     private void Save()
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+    }
+
+    public void SetFullScreen (bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;
     }
 }
