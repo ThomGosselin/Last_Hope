@@ -7,6 +7,6 @@ public class LvlChoice : MonoBehaviour
 {
    public void GoToLvl1 ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Loader.Load(Loader.Scene.Game_Level1);
     }
 }

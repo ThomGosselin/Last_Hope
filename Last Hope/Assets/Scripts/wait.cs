@@ -15,6 +15,6 @@ public class wait : MonoBehaviour
     IEnumerator waitForIntro()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Loader.Load(Loader.Scene.Main_Menu);
     }
 }
