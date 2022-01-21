@@ -1649,6 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rigidbody: {fileID: 1886971563}
+  animator: {fileID: 1886971565}
 --- !u!50 &1886971563
 Rigidbody2D:
   serializedVersion: 4
