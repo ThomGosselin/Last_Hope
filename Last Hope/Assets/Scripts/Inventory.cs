@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public ArrayList inventory;
+    public  List<ObjDesc> inventory;
 
     public GameObject objets;
     public ObjDesc description;
     bool objectToPickup = false;
+    int invIndex = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +26,7 @@ public class Inventory : MonoBehaviour
     {
         if (objectToPickup == true)
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 objets.SetActive(false);
                 addToInventory();
@@ -35,10 +36,9 @@ public class Inventory : MonoBehaviour
 
     public void addToInventory()
     {
-        if (inventory.Count != 7) //A CHANGER LORSQUE LE NOMBRE FINAL SERA DETERMINER
-        {
-            inventory.Add(objets);
-            Debug.Log(inventory);
-        }
+        Debug.Log(inventory.Count);
+        inventory.Add(description);
+        Debug.Log(inventory.Count);
+
     }
 }
