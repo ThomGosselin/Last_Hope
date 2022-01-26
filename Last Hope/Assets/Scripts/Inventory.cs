@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public  List<ObjDesc> inventory;
-    public  Component[] inventorySpaces;
+    public  Image[] inventorySpaces;
 
     public GameObject objets;
     public GameObject invUI;
@@ -27,14 +27,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        inventorySpaces = GetComponentsInChildren<Image>();
-
-        foreach (Image imgObj in inventorySpaces)
-        {
-            Debug.Log("je suis un inventaire");
-            Debug.Log(imgObj.sprite);
-        }
-        
+        inventorySpaces = invUI.GetComponentsInChildren<Image>();   
     }
 
     private void FixedUpdate()
@@ -54,6 +47,14 @@ public class Inventory : MonoBehaviour
         Debug.Log(inventory.Count);
         inventory.Add(description);
         Debug.Log(inventory.Count);
-
+        foreach (Image imgObj in inventorySpaces)
+        {
+            Debug.Log(imgObj);
+            Debug.Log(imgObj.sprite);
+            /*if (imgObj.sprite == null)
+            {
+                imgObj.sprite = description.ObjIcon;
+            }*/
+        }
     }
 }

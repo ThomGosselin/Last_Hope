@@ -5495,41 +5495,59 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3f3adc47987c7a64dafb7ae1a6200213, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 3650958192364741745, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: 3650958192364741745, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 14
-    m_Data: {fileID: -1068864109198695630, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: -1068864109198695630, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 2
-    m_Data: {fileID: -2682101358105071631, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: -2682101358105071631, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 6
-    m_Data: {fileID: 3212242992796819187, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: 3212242992796819187, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 72
-    m_Data: {fileID: -427929633429426518, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: -427929633429426518, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 3
-    m_Data: {fileID: -1640010571101765444, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: -1640010571101765444, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 17
-    m_Data: {fileID: -427929633429426518, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: -427929633429426518, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 2
-    m_Data: {fileID: -1640010571101765444, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: -1640010571101765444, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3650958192364741745, guid: b2a6df3e7d36eea48adb6e23e81cb4cb, type: 3}
+    m_Data: {fileID: 3650958192364741745, guid: b2a6df3e7d36eea48adb6e23e81cb4cb,
+      type: 3}
   - m_RefCount: 3
-    m_Data: {fileID: -1068864109198695630, guid: b2a6df3e7d36eea48adb6e23e81cb4cb, type: 3}
+    m_Data: {fileID: -1068864109198695630, guid: b2a6df3e7d36eea48adb6e23e81cb4cb,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5154020571090421382, guid: 6735582ca0762b540bec88e686a525e0, type: 3}
+    m_Data: {fileID: 5154020571090421382, guid: 6735582ca0762b540bec88e686a525e0,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4722106832332892640, guid: b2a6df3e7d36eea48adb6e23e81cb4cb, type: 3}
+    m_Data: {fileID: -4722106832332892640, guid: b2a6df3e7d36eea48adb6e23e81cb4cb,
+      type: 3}
   - m_RefCount: 3
-    m_Data: {fileID: 7753678998497880219, guid: b2a6df3e7d36eea48adb6e23e81cb4cb, type: 3}
+    m_Data: {fileID: 7753678998497880219, guid: b2a6df3e7d36eea48adb6e23e81cb4cb,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3212242992796819187, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: 3212242992796819187, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4722106832332892640, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: -4722106832332892640, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 14
-    m_Data: {fileID: 7753678998497880219, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: 7753678998497880219, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5154020571090421382, guid: 3a91c538b99e158458fde8715897bd81, type: 3}
+    m_Data: {fileID: 5154020571090421382, guid: 3a91c538b99e158458fde8715897bd81,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5683614418356096740, guid: bc3fa7a871da85046bfcf8a72ab852ef, type: 3}
+    m_Data: {fileID: 5683614418356096740, guid: bc3fa7a871da85046bfcf8a72ab852ef,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 183
     m_Data:
@@ -5941,9 +5959,9 @@ GameObject:
   - component: {fileID: 1892996384}
   - component: {fileID: 1892996383}
   - component: {fileID: 1892996382}
-  - component: {fileID: 1892996380}
   - component: {fileID: 1892996381}
   - component: {fileID: 1892996386}
+  - component: {fileID: 1892996380}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6059,7 +6077,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9023978872905932864, guid: 5b38daa404453ad408bab31d1303e8f6, type: 3}
+  m_Sprite: {fileID: 9023978872905932864, guid: 5b38daa404453ad408bab31d1303e8f6,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
