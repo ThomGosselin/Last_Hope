@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ArrayList inventory;
 
-    // Update is called once per frame
-    void Update()
+    public void fixedUpdate()
     {
-        
+
     }
 }
