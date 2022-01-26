@@ -5,6 +5,6 @@ using UnityEngine;
 public class ObjDesc : MonoBehaviour
 {
    public string ObjName;
-   public int ObjQte;
+   public int ObjIndex;
    public Sprite ObjIcon;
 }

@@ -47,14 +47,20 @@ public class Inventory : MonoBehaviour
         Debug.Log(inventory.Count);
         inventory.Add(description);
         Debug.Log(inventory.Count);
+        Debug.Log(description.ObjIcon);
+
         foreach (Image imgObj in inventorySpaces)
         {
-            Debug.Log(imgObj);
-            Debug.Log(imgObj.sprite);
-            /*if (imgObj.sprite == null)
+            if (imgObj.sprite == null)
             {
                 imgObj.sprite = description.ObjIcon;
-            }*/
+                break;
+            }
         }
+    }
+
+    public void AddToUI()
+    {
+        Debug.Log("test");
     }
 }
