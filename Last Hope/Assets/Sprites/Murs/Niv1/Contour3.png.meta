@@ -1,34 +1,7 @@
 fileFormatVersion: 2
-guid: 51bc49eb5e1fef54ebd90feb164f35fd
+guid: f3ede23f9ae9d2d419bd17dedd730079
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4722106832332892640
-    second: ContourMurNiv2_0
-  - first:
-      213: 7753678998497880219
-    second: ContourMurNiv2_1
-  - first:
-      213: 5154020571090421382
-    second: ContourMurNiv2_2
-  - first:
-      213: 3212242992796819187
-    second: ContourMurNiv2_3
-  - first:
-      213: -427929633429426518
-    second: ContourMurNiv2_4
-  - first:
-      213: -1640010571101765444
-    second: ContourMurNiv2_5
-  - first:
-      213: 3650958192364741745
-    second: ContourMurNiv2_6
-  - first:
-      213: -1068864109198695630
-    second: ContourMurNiv2_7
-  - first:
-      213: -2682101358105071631
-    second: ContourMurNiv2_8
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -104,6 +77,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
