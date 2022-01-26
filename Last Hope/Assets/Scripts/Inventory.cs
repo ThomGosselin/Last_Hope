@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public  List<ObjDesc> inventory;
+    public  Component[] inventorySpaces;
 
     public GameObject objets;
+    public GameObject invUI;
     public ObjDesc description;
     bool objectToPickup = false;
     int invIndex = 0;
@@ -20,6 +23,18 @@ public class Inventory : MonoBehaviour
 
 
         }
+    }
+
+    private void Start()
+    {
+        inventorySpaces = GetComponentsInChildren<Image>();
+
+        foreach (Image imgObj in inventorySpaces)
+        {
+            Debug.Log("je suis un inventaire");
+            Debug.Log(imgObj.sprite);
+        }
+        
     }
 
     private void FixedUpdate()
