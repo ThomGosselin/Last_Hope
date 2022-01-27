@@ -13,7 +13,6 @@ public class Inventory : MonoBehaviour
     public ObjDesc ObjEnContact;
     public GameObject objets;
     bool objectToPickup = false;
-    int invIndex = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
