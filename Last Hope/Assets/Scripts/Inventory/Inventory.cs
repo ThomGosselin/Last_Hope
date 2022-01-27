@@ -35,15 +35,8 @@ public class Inventory : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(inventory.Count != 7)
-                {
-                    objets.SetActive(false);
-                    addToInventory();
-                }
-                else
-                {
-                    //ajouter code pour item plein (bruitage);
-                }
+                objets.SetActive(false);
+                addToInventory(); 
             }
         }
     }
