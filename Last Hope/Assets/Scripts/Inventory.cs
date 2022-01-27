@@ -11,18 +11,18 @@ public class Inventory : MonoBehaviour
     public GameObject objets;
     public GameObject invUI;
     public ObjDesc description;
+    public ObjDesc ObjEnContact;
     bool objectToPickup = false;
     int invIndex = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.GetComponent<ObjDesc>().ObjName);
         Debug.Log("collision");
         if (collision.CompareTag("Objets"))
         {
             Debug.Log("C'est un objets");
             objectToPickup = true;
-
-
         }
     }
 

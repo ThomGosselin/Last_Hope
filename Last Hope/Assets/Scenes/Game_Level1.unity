@@ -4226,7 +4226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fa4a48c8576b4bbd97ed4fe20acd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjName: Papier
+  ObjName: papier
   ObjIndex: 2
   ObjIcon: {fileID: 21300000, guid: 1bb7f83a3e7323f418cdc24449a4a195, type: 3}
 --- !u!61 &882721329
@@ -7592,8 +7592,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.32258064, y: 0.32258064}
+  m_Offset: {x: -0.0049876487, y: 0}
+  m_Size: {x: 0.4522584, y: 0.4522584}
   m_Direction: 0
 --- !u!95 &1886971565
 Animator:
@@ -7626,28 +7626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df9d3f93ce530b43914237853dbeb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFull: 00000000000000
-  slots:
-  - {fileID: 334950361}
-  - {fileID: 1386882115}
-  - {fileID: 351841553}
-  - {fileID: 498940891}
-  - {fileID: 39011843}
-  - {fileID: 1622688461}
-  - {fileID: 1710287845}
   inventory: []
   inventorySpaces: []
-  pickableItems:
-  - {fileID: 802423165}
-  - {fileID: 882721325}
-  objets: []
+  objets: {fileID: 802423165}
   invUI: {fileID: 2124239266}
   description: {fileID: 802423170}
-  Obj1: {fileID: 802423165}
-  Obj2: {fileID: 882721325}
-  Obj3: {fileID: 0}
-  Obj4: {fileID: 0}
-  Obj5: {fileID: 0}
 --- !u!70 &1886971567
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7661,8 +7644,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.32258064, y: 0.32258064}
+  m_Offset: {x: 0, y: -0.04987608}
+  m_Size: {x: 0.3225807, y: 0.4223328}
   m_Direction: 0
 --- !u!1 &1915933217
 GameObject:
