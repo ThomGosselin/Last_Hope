@@ -26,13 +26,11 @@ public class InventoryUI : MonoBehaviour
     public void OpenInventory()
         {
             InventoryMenuUi.SetActive(true);
-            Time.timeScale = 0f;
             isInventoryOpen = true;
         }
     public void CloseInventory()
     {
         InventoryMenuUi.SetActive(false);
-        Time.timeScale = 1f;
         isInventoryOpen = false;
     }
 }
