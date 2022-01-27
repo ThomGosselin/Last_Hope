@@ -8,16 +8,17 @@ public class Inventory : MonoBehaviour
     public List<ObjDesc> inventory;
     public Image[] inventorySpaces;
 
-    public GameObject objets;
     public GameObject invUI;
     public ObjDesc description;
     public ObjDesc ObjEnContact;
+    public GameObject objets;
     bool objectToPickup = false;
     int invIndex = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.GetComponent<ObjDesc>().ObjName);
+        objets = collision.gameObject;
+        ObjEnContact = collision.gameObject.GetComponent<ObjDesc>();
         Debug.Log("collision");
         if (collision.CompareTag("Objets"))
         {
@@ -46,7 +47,7 @@ public class Inventory : MonoBehaviour
     public void addToInventory()
     {
         Debug.Log(inventory.Count);
-        inventory.Add(description);
+        inventory.Add(ObjEnContact);
         Debug.Log(inventory.Count);
         Debug.Log(description.ObjIcon);
 
@@ -54,7 +55,7 @@ public class Inventory : MonoBehaviour
         {
             if (imgObj.sprite == null)
             {
-                imgObj.sprite = description.ObjIcon;
+                imgObj.sprite = ObjEnContact.ObjIcon;
                 break;
             }
         }
