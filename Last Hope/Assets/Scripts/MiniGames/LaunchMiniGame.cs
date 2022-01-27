@@ -22,6 +22,7 @@ public class LaunchMiniGame : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 MiniGame1.SetActive(true);
+                isThereAcollision = false;
             }
         }
     }
