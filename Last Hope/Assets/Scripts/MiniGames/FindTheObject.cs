@@ -5,17 +5,29 @@ using UnityEngine.UI;
 
 public class FindTheObject : MonoBehaviour
 {
-
-    public Sprite imgToFind;
+    public GameObject GameGrid;
+    public GameObject imgToFind;
     private void FixedUpdate()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Click");
-            if (imgToFind.CompareTag("ItemToFind"))
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+
+            if (!hit)
             {
-                Debug.Log("Bingo!");
+                Debug.Log("Erreur");
+                //son erreur minigame
+                return;
+            }
+            if (hit.collider.CompareTag("ItemToFind"))
+            {
+                Debug.Log("J'ai toucher la cible");
+                GameGrid.SetActive(false);
             }
         }
+        
     }
 }
