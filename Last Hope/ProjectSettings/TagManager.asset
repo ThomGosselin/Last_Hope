@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Objets
   - Papier
+  - ItemToFind
   layers:
   - Default
   - TransparentFX
