@@ -18,10 +18,8 @@ public class Inventory : MonoBehaviour
     {
         objets = collision.gameObject;
         ObjEnContact = collision.gameObject.GetComponent<ObjDesc>();
-        Debug.Log("collision");
         if (collision.CompareTag("Objets"))
         {
-            Debug.Log("C'est un objets");
             objectToPickup = true;
         }
     }
@@ -37,18 +35,22 @@ public class Inventory : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                objets.SetActive(false);
-                addToInventory();
+                if(inventory.Count != 7)
+                {
+                    objets.SetActive(false);
+                    addToInventory();
+                }
+                else
+                {
+                    //ajouter code pour item plein (bruitage);
+                }
             }
         }
     }
 
     public void addToInventory()
     {
-        Debug.Log(inventory.Count);
         inventory.Add(ObjEnContact);
-        Debug.Log(inventory.Count);
-        Debug.Log(description.ObjIcon);
 
         foreach (Image imgObj in inventorySpaces)
         {
@@ -58,10 +60,5 @@ public class Inventory : MonoBehaviour
                 break;
             }
         }
-    }
-
-    public void AddToUI()
-    {
-        Debug.Log("test");
     }
 }
