@@ -4052,7 +4052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjName: Test
-  ObjIndex: 0
+  ObjIndex: 1
   ObjIcon: {fileID: 21300000, guid: a39596ff852b7f042b03942a85067e44, type: 3}
 --- !u!1 &811426265
 GameObject:
@@ -4227,7 +4227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjName: Papier
-  ObjIndex: 0
+  ObjIndex: 2
   ObjIcon: {fileID: 21300000, guid: 1bb7f83a3e7323f418cdc24449a4a195, type: 3}
 --- !u!61 &882721329
 BoxCollider2D:
@@ -7628,9 +7628,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: []
   inventorySpaces: []
-  objets: {fileID: 802423165}
+  pickableItems:
+  - {fileID: 802423165}
+  - {fileID: 882721325}
+  objets: []
   invUI: {fileID: 2124239266}
   description: {fileID: 802423170}
+  Obj1: {fileID: 802423165}
+  Obj2: {fileID: 882721325}
+  Obj3: {fileID: 0}
+  Obj4: {fileID: 0}
+  Obj5: {fileID: 0}
 --- !u!70 &1886971567
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
