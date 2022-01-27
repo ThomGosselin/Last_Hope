@@ -11,7 +11,6 @@ public class LaunchMiniGame : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            Debug.Log("aie");
             isThereAcollision = true;
         }
     }

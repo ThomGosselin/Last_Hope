@@ -18,13 +18,11 @@ public class FindTheObject : MonoBehaviour
 
             if (!hit)
             {
-                Debug.Log("Erreur");
                 //son erreur minigame
                 return;
             }
             if (hit.collider.CompareTag("ItemToFind"))
             {
-                Debug.Log("J'ai toucher la cible");
                 GameGrid.SetActive(false);
             }
         }
