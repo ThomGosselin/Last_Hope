@@ -972,8 +972,8 @@ Tilemap:
   - first: {x: -2, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 24
+      m_TileIndex: 25
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1143,7 +1143,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 22
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1183,7 +1183,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 21
+      m_TileSpriteIndex: 22
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1243,7 +1243,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 29
-      m_TileSpriteIndex: 20
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1283,7 +1283,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 28
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2355,8 +2355,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 73f5f2009f25e6e48a3ce5a21f2e8654, type: 2}
   - m_RefCount: 89
     m_Data: {fileID: 11400000, guid: e572a95204d98f64eadd2fc543c6089f, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 5deb88eda3c874d4b91cda10ef0568b2, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 95b890ef661fa1a4a8f882e612fb5f9f, type: 2}
   - m_RefCount: 1
@@ -2371,8 +2371,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 634ad59d30512f64383dbc26f85c65dd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 238c948f9c1ac1248aa8df53ab360d93, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 6929ff9f4876a9a4e81e5a83fef2a841, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b618118085d688d45b93a21609da4935, type: 2}
   - m_RefCount: 1
@@ -2393,7 +2393,7 @@ Tilemap:
   - m_RefCount: 15
     m_Data: {fileID: 7753678998497880219, guid: 4be4b078142a6614c86c22dd7324a1ec, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5182674865248684607, guid: ea27c233f26ea5b44ae51223d10a3a0b, type: 3}
+    m_Data: {fileID: 5683614418356096740, guid: 18726801aba2158408f36f5c311ee593, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 7161404093255445002, guid: dd1607846a3cec44dbd8cab45b1a7d4b, type: 3}
   - m_RefCount: 18
@@ -2427,15 +2427,15 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 3212242992796819187, guid: 4be4b078142a6614c86c22dd7324a1ec, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 5182674865248684607, guid: ea27c233f26ea5b44ae51223d10a3a0b, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: -7399752011828943389, guid: ea27c233f26ea5b44ae51223d10a3a0b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 5154020571090421382, guid: 57753461cef471b4eb5c8fe3eab2e6bb, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 3650958192364741745, guid: f3ede23f9ae9d2d419bd17dedd730079, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 7753678998497880219, guid: 57753461cef471b4eb5c8fe3eab2e6bb, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5683614418356096740, guid: 7a0afbb1ba30a2c4881fc76ed86d3c06, type: 3}
+    m_Data: {fileID: 3650958192364741745, guid: f3ede23f9ae9d2d419bd17dedd730079, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 5524602900705950597, guid: c6df2a7956650d7419c602f6d0247b51, type: 3}
   - m_RefCount: 1
@@ -7473,7 +7473,7 @@ GameObject:
   - component: {fileID: 1886971566}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7626,6 +7626,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df9d3f93ce530b43914237853dbeb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFull: 00000000000000
+  slots:
+  - {fileID: 334950361}
+  - {fileID: 1386882115}
+  - {fileID: 351841553}
+  - {fileID: 498940891}
+  - {fileID: 39011843}
+  - {fileID: 1622688461}
+  - {fileID: 1710287845}
   inventory: []
   inventorySpaces: []
   pickableItems:
