@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: dc86c5b84cb18c44598a932028af4448
+guid: 6149df4fa60ffaf45899f112be626d5b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6980830589498039368
-    second: peinture_0
-  - first:
-      213: 1200254979252530856
-    second: peinture_1
+      213: 3223290067095161158
+    second: porte_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,12 +106,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: peinture_0
+      name: porte_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -123,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b3e9cb909b1f1f90800000000000000
-      internalID: -6980830589498039368
+      spriteID: 64980410d3d6bbc20800000000000000
+      internalID: 3223290067095161158
       vertices: []
       indices: 
       edges: []
