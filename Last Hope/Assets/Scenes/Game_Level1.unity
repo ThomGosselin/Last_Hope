@@ -298,7 +298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90573548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.85, y: 3.83, z: -0.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 841414679}
@@ -2520,6 +2520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoffreFort: {fileID: 1944676212}
   MiniGame1: {fileID: 90573548}
+  player: {fileID: 1886971559}
+  isThereAcollision: 0
 --- !u!61 &1040852031
 BoxCollider2D:
   m_ObjectHideFlags: 0

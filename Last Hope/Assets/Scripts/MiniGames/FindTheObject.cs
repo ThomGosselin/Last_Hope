@@ -7,6 +7,7 @@ public class FindTheObject : MonoBehaviour
 {
     public GameObject GameGrid;
     public GameObject imgToFind;
+    public GameObject player;
     private void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,6 +25,7 @@ public class FindTheObject : MonoBehaviour
             if (hit.collider.CompareTag("ItemToFind"))
             {
                 GameGrid.SetActive(false);
+                player.SetActive(true);
             }
         }
         

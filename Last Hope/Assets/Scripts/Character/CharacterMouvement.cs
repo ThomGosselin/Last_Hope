@@ -8,6 +8,7 @@ public class CharacterMouvement : MonoBehaviour
 
     public Rigidbody2D rigidbody;
     public Animator animator;
+     static public bool allowMouvement = true;
 
     Vector2 movement;
 

@@ -6,7 +6,8 @@ public class LaunchMiniGame : MonoBehaviour
 {
     public GameObject CoffreFort;
     public GameObject MiniGame1;
-    bool isThereAcollision = false;
+    public GameObject player;
+    public bool  isThereAcollision = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
@@ -22,7 +23,7 @@ public class LaunchMiniGame : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 MiniGame1.SetActive(true);
-                isThereAcollision = false;
+                player.SetActive(false);
             }
         }
     }
