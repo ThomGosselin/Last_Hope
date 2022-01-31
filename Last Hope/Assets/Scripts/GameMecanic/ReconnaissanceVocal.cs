@@ -13,7 +13,7 @@ public class ReconnaissanceVocal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        keywordActions.Add("citrouille", Test);
+        keywordActions.Add("test", Test);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -22,6 +22,7 @@ public class ReconnaissanceVocal : MonoBehaviour
 
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
     {
+        Debug.Log("Allo");
         keywordActions[args.text].Invoke();
     }
 
