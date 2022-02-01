@@ -36,8 +36,17 @@ public class Inventory : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                objets.SetActive(false);
-                addToInventory(); 
+                if( inventorySpaces.Length == 7)
+                {
+                    Debug.Log("im full");
+                    FindObjectOfType<AudioManager>().Play("InvFull");
+                }
+                else
+                {
+                    objets.SetActive(false);
+                    FindObjectOfType<AudioManager>().Play("InvPick");
+                    addToInventory();
+                } 
             }
         }
     }
