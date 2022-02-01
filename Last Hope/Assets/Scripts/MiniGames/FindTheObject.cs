@@ -8,6 +8,7 @@ public class FindTheObject : MonoBehaviour
     public GameObject GameGrid;
     public GameObject imgToFind;
     public GameObject player;
+    public GameObject itemKey1;
     private void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0))
@@ -27,6 +28,7 @@ public class FindTheObject : MonoBehaviour
                 GameGrid.SetActive(false);
                 player.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+                itemKey1.SetActive(true);
             }
         }
         
