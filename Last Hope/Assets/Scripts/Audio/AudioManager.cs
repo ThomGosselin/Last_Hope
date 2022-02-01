@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
 
     public Sound[] sounds;
+    public AudioSource lvlSounds;
     private bool isGamePaused = false;
     // Start is called before the first frame update
     void Awake()
@@ -63,12 +64,15 @@ public class AudioManager : MonoBehaviour
     {
         Debug.Log("pause");
         isGamePaused = true;
-        Pause("Lvl1Sound");
+        lvlSounds.volume = 0;
+        FindObjectOfType<AudioManager>().Play("Pause");
     }
 
     private void ClosePause()
     {
         Debug.Log("UnPause");
         isGamePaused = false;
+        lvlSounds.volume = 1;
+        FindObjectOfType<AudioManager>().Pause("Pause");
     }
 }
