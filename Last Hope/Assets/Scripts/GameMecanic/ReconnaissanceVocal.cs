@@ -22,12 +22,12 @@ public class ReconnaissanceVocal : MonoBehaviour
 
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
     {
-        Debug.Log("Allo");
+        Debug.Log("Voix entendu");
         keywordActions[args.text].Invoke();
     }
 
     private void Test()
     {
-        Debug.Log("Je suis un test");
+        Debug.Log("Reconnaissance vocal ok!");
     }
 }
