@@ -19,13 +19,14 @@ public class FindTheObject : MonoBehaviour
 
             if (!hit)
             {
-                //son erreur minigame
+                FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
                 return;
             }
             if (hit.collider.CompareTag("ItemToFind"))
             {
                 GameGrid.SetActive(false);
                 player.SetActive(true);
+                FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             }
         }
         
