@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class unlockVault : MonoBehaviour
 {
     public GameObject[] circleTab;
-    public GameObject[] selectedCircleTab;
+    public List<GameObject> selectedCircleTab;
     public GameObject gameGrid;
     public int randomCircle;
     public int circleToRemember;
@@ -16,13 +16,15 @@ public class unlockVault : MonoBehaviour
     public GameObject correctCircle;
     public int lifes;
     public int numberRange;
+    public GameObject itemKey1;
+    public GameObject Player;
 
     void Start()
     {
         numberRange = circleTab.Length;
         GenerateRandomCircles();
-    
-            StartCoroutine(waitForStartGames());
+
+        StartCoroutine(waitForStartGames());
     }
 
     IEnumerator waitForStartGames()
@@ -33,7 +35,7 @@ public class unlockVault : MonoBehaviour
             circleTab[i].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
 
         }
-            Debug.Log("start");
+        Debug.Log("start");
     }
 
 
@@ -49,12 +51,13 @@ public class unlockVault : MonoBehaviour
             }
             else
             {
-                Debug.Log(randomCircle);
                 circleTab[randomCircle - 1].transform.gameObject.tag = "selectedCricles";
                 circleTab[randomCircle - 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+                selectedCircleTab.Add(circleTab[randomCircle - 1]);
+                Debug.Log(selectedCircleTab.Count);
                 oldNumber = randomCircle;
             }
-           
+
         }
     }
 
@@ -62,7 +65,7 @@ public class unlockVault : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(lifes != 0)
+            if (lifes != 0)
             {
                 Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
@@ -72,27 +75,36 @@ public class unlockVault : MonoBehaviour
                 {
                     FindObjectOfType<AudioManager>().Play("goodChoice");
                     hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
-                    circleTab[randomCircle - 1].transform.gameObject.tag = "selected";
-                }
-                else if (hit.collider.CompareTag("circles"))
-                {
-                    FindObjectOfType<AudioManager>().Play("badChoice");
-                    hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-                    lifes = lifes - 1;
-                }
-                else if (!hit)
-                {
-                    return;
-                }
-            }
-            else
-            {
-                gameGrid.SetActive(false);
-                FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
-            }
-        //code verification si le joueur a tout trouver 
-        }
-        
-    }
+                    selectedCircleTab.Remove(hit.collider.gameObject);
+                    Debug.Log(selectedCircleTab.Count);
+                    if (selectedCircleTab.Count == 0) {
+                        gameGrid.SetActive(false);
+                        Player.SetActive(true);
+                        FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+                        itemKey1.SetActive(true);
 
+                    }
+                    else if (hit.collider.CompareTag("circles"))
+                    {
+                        FindObjectOfType<AudioManager>().Play("badChoice");
+                        hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                        lifes = lifes - 1;
+                    }
+                    else if (!hit)
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    gameGrid.SetActive(false);
+                    FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
+                    Player.SetActive(true);
+                }
+
+            }
+
+        }
+
+    }
 }

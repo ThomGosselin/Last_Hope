@@ -11,6 +11,7 @@ TagManager:
   - MiniGame2
   - selectedCricles
   - circles
+  - bureau
   layers:
   - Default
   - TransparentFX

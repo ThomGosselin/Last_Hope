@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LaunchMiniGame : MonoBehaviour
 {
-    public GameObject CoffreFort;
     public GameObject MiniGame1;
     public GameObject player;
     public BoxCollider2D hitBox;
@@ -22,6 +21,7 @@ public class LaunchMiniGame : MonoBehaviour
     {
         if (isThereAcollision == true)
         {
+            Debug.Log("Jeu");
             if (Input.GetKey(KeyCode.E))
             {
                 MiniGame1.SetActive(true);
