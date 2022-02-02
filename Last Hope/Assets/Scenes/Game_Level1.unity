@@ -1917,6 +1917,18 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: goodChoice
+    clip: {fileID: 8300000, guid: 79f4c3ba6285b4b4f8053574a1f4293c, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: badChoice
+    clip: {fileID: 8300000, guid: 1523bab7068f00d488bd8613ac5f806b, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
   lvlSounds: {fileID: 110480089}
 --- !u!4 &469808371
 Transform:
@@ -8760,12 +8772,13 @@ MonoBehaviour:
   selectedCircleTab: []
   gameGrid: {fileID: 1064330689}
   randomCircle: 0
-  circleToRemember: 3
+  circleToRemember: 4
   i: 0
   oldNumber: 0
   selectedCircle: {fileID: 0}
   correctCircle: {fileID: 0}
   lifes: 1
+  numberRange: 0
 --- !u!1 &1179672892
 GameObject:
   m_ObjectHideFlags: 0
@@ -8874,7 +8887,7 @@ GameObject:
   - component: {fileID: 1212026664}
   m_Layer: 0
   m_Name: circle5
-  m_TagString: selectedCricles
+  m_TagString: circles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12155,6 +12168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1953750694}
   - component: {fileID: 1953750693}
+  - component: {fileID: 1953750695}
   m_Layer: 0
   m_Name: Peinture
   m_TagString: Untagged
@@ -12227,6 +12241,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1953750695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953750692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2978e95f059ff8847ae6f9ea8f7b2ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1971368021
 GameObject:
   m_ObjectHideFlags: 0
