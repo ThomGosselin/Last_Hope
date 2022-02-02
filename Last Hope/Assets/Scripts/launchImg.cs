@@ -20,7 +20,6 @@ public class launchImg : MonoBehaviour
     {
         if (isThereAcollision == true)
         {
-            Debug.Log("Jeu");
             if (Input.GetKey(KeyCode.E))
             {
                 imgCadenas.SetActive(true);

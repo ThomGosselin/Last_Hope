@@ -18,6 +18,7 @@ public class unlockVault : MonoBehaviour
     public int numberRange;
     public GameObject itemKey1;
     public GameObject Player;
+    public BoxCollider2D hitBox;
 
     void Start()
     {
@@ -82,6 +83,7 @@ public class unlockVault : MonoBehaviour
                         Player.SetActive(true);
                         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
                         itemKey1.SetActive(true);
+                        Destroy(hitBox);
 
                     }
                     else if (hit.collider.CompareTag("circles"))
