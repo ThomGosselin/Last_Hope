@@ -40,8 +40,8 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        Loader.Load(Loader.Scene.Main_Menu);
-        GameIsPaused = false;
+       // Loader.Load(Loader.Scene.Main_Menu);
+       // GameIsPaused = false;
     }
 
     public void QuitGame()

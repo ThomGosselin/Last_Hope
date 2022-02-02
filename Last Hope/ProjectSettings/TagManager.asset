@@ -9,6 +9,8 @@ TagManager:
   - ItemToFind
   - MiniGame1
   - MiniGame2
+  - selectedCricles
+  - circles
   layers:
   - Default
   - TransparentFX
