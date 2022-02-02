@@ -14,10 +14,12 @@ public class unlockVault : MonoBehaviour
     public int oldNumber;
     public GameObject selectedCircle;
     public GameObject correctCircle;
+    public int lifes;
 
 
     void Start()
     {
+        GenerateRandomCircles();
         StartCoroutine(waitForStartGames());
     }
 
@@ -28,25 +30,40 @@ public class unlockVault : MonoBehaviour
     }
 
 
+    private void GenerateRandomCircles()
+    {
+
+    }
+
 
     public void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+            if(lifes != 0)
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider.CompareTag("selectedCricles"))
-            {
-                FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
-               hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+                if (hit.collider.CompareTag("selectedCricles"))
+                {
+                    FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+                    hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                }
+                else if (hit.collider.CompareTag("circles"))
+                {
+                    FindObjectOfType<AudioManager>().Play("InvFull");
+                    hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                    lifes = lifes - 1;
+                }
             }
-            else if( hit.collider.CompareTag("circles"))
+            else
             {
-                FindObjectOfType<AudioManager>().Play("InvFull");
-                hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                gameGrid.SetActive(false);
+                FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
             }
+           
         }
     }
 
