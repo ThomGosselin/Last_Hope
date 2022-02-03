@@ -7,6 +7,7 @@ public class launchImg : MonoBehaviour
 
     public GameObject imgCadenas;
     public GameObject player;
+    public BoxCollider2D hitbox;
     public bool isThereAcollision = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,6 +26,7 @@ public class launchImg : MonoBehaviour
                 imgCadenas.SetActive(true);
                 player.SetActive(false);
                 isThereAcollision = false;
+                Destroy(hitbox);
 
             }
         }

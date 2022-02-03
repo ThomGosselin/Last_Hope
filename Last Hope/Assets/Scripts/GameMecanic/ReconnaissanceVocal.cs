@@ -11,6 +11,8 @@ public class ReconnaissanceVocal : MonoBehaviour
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
 
+    public GameObject peinture;
+    public GameObject player;
     public GameObject key3;
     // Start is called before the first frame update
     void Start()
@@ -32,5 +34,7 @@ public class ReconnaissanceVocal : MonoBehaviour
     {
         Debug.Log("Reconnaissance vocal ok!");
         key3.SetActive(true);
+        player.SetActive(true);
+        peinture.SetActive(false);
     }
 }

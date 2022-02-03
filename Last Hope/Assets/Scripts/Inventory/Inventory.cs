@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         inventorySpaces = invUI.GetComponentsInChildren<Image>();
     }
 
-    private void FixedUpdate()
+    void Update()
     {
         if (objectToPickup == true)
         {
@@ -46,6 +46,7 @@ public class Inventory : MonoBehaviour
                     objets.SetActive(false);
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
+                    objectToPickup = false;
                 } 
             }
         }
