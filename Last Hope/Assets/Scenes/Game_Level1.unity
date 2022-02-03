@@ -611,6 +611,7 @@ MonoBehaviour:
   imgToFind: {fileID: 496960513}
   player: {fileID: 1886971559}
   itemKey1: {fileID: 621132881}
+  hitBox: {fileID: 740242632}
 --- !u!1 &102289866
 GameObject:
   m_ObjectHideFlags: 0
@@ -9068,7 +9069,7 @@ MonoBehaviour:
   numberRange: 0
   itemKey1: {fileID: 1017393029}
   Player: {fileID: 1886971559}
-  hitBox: {fileID: 740242632}
+  hitBox: {fileID: 1040852031}
 --- !u!1 &1070540482
 GameObject:
   m_ObjectHideFlags: 0
@@ -13293,7 +13294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899193357}
   m_Layer: 0
-  m_Name: Thom recherche unity Singletone pour ton truc pour les 3 clefs
+  m_Name: Thom check pour faire flahser les trucs de couleur du vault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

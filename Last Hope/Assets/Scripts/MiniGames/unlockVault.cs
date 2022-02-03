@@ -22,9 +22,14 @@ public class unlockVault : MonoBehaviour
 
     void Start()
     {
+        StartGame();
+    }
+
+    public void StartGame()
+    {
+        gameGrid.SetActive(true);
         numberRange = circleTab.Length;
         GenerateRandomCircles();
-
         StartCoroutine(waitForStartGames());
     }
 
@@ -101,6 +106,7 @@ public class unlockVault : MonoBehaviour
                     gameGrid.SetActive(false);
                     FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
                     Player.SetActive(true);
+                    StartGame();
                 }
 
             }

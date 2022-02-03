@@ -9,6 +9,7 @@ public class FindTheObject : MonoBehaviour
     public GameObject imgToFind;
     public GameObject player;
     public GameObject itemKey1;
+    public BoxCollider2D hitBox;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -29,6 +30,7 @@ public class FindTheObject : MonoBehaviour
                 player.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
                 itemKey1.SetActive(true);
+                Destroy(hitBox);
             }
         }
         

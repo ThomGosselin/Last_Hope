@@ -28,7 +28,6 @@ public class LaunchMiniGame : MonoBehaviour
                 player.SetActive(false);
                 temp = -3;
                 isThereAcollision = false;
-                Destroy(hitBox);
             }
         }
     }
