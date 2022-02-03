@@ -2393,7 +2393,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  lvlSounds: {fileID: 110480089}
+  lvlSounds: {fileID: 0}
 --- !u!4 &469808371
 Transform:
   m_ObjectHideFlags: 0
@@ -13174,7 +13174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds: []
-  lvlSounds: {fileID: 0}
+  lvlSounds: {fileID: 110480089}
 --- !u!1 &1890931105
 GameObject:
   m_ObjectHideFlags: 0
@@ -14005,7 +14005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imgCadenas: {fileID: 358530430}
   player: {fileID: 1886971559}
-  hitbox: {fileID: 0}
+  hitbox: {fileID: 2100415059}
   isThereAcollision: 0
 --- !u!4 &2100415061
 Transform:
