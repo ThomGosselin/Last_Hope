@@ -77,7 +77,6 @@ public class unlockVault : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("goodChoice");
                     hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
                     selectedCircleTab.Remove(hit.collider.gameObject);
-                    Debug.Log(selectedCircleTab.Count);
                     if (selectedCircleTab.Count == 0) {
                         gameGrid.SetActive(false);
                         Player.SetActive(true);

@@ -17,7 +17,11 @@ public class ReconnaissanceVocal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< Updated upstream
         keywordActions.Add("hi", Test);
+=======
+        keywordActions.Add("test", MiniGameLvl1);
+>>>>>>> Stashed changes
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -30,7 +34,7 @@ public class ReconnaissanceVocal : MonoBehaviour
         keywordActions[args.text].Invoke();
     }
 
-    private void Test()
+    private void MiniGameLvl1()
     {
         Debug.Log("Reconnaissance vocal ok!");
         key3.SetActive(true);

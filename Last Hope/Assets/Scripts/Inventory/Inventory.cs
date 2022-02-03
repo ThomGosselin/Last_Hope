@@ -44,6 +44,18 @@ public class Inventory : MonoBehaviour
                 else
                 {
                     objets.SetActive(false);
+                    switch (objets.name)
+                    {
+                        case "Key1":
+                            FindObjectOfType<Level1Manager>().key1Good = true;
+                            break;
+                        case "Key2":
+                            FindObjectOfType<Level1Manager>().key2Good = true;
+                            break;
+                        case "Key3":
+                            FindObjectOfType<Level1Manager>().key3Good = true;
+                            break;
+                    }
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
                     objectToPickup = false;

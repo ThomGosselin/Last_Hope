@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: a2a452f80913b8440b5e7e8dcc3bcdc4
+guid: 7518a3cb3854ced43aacf5fa09777f1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 335127287571971743
-    second: tablecafe_0
+      213: 475151823303498707
+    second: tapis_0
   - first:
-      213: -7177136948349252045
-    second: tablecafe_1
+      213: 4239641887052831303
+    second: tapis_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,59 +93,47 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tablecafe_0
+      name: tapis_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 8
         height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e74421e7c96a400800000000000000
-      internalID: 335127287571971743
+      spriteID: 3db526ad014189600800000000000000
+      internalID: 475151823303498707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tablecafe_1
+      name: tapis_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 8
         y: 0
-        width: 16
+        width: 8
         height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33ecf49b8ffa56c90800000000000000
-      internalID: -7177136948349252045
+      spriteID: 74a96ac65db36da30800000000000000
+      internalID: 4239641887052831303
       vertices: []
       indices: 
       edges: []
