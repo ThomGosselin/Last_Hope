@@ -14,7 +14,7 @@ public class wait : MonoBehaviour
 
     IEnumerator waitForIntro()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(13);
         Loader.Load(Loader.Scene.Main_Menu);
     }
 }
