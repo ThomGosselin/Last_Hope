@@ -12,6 +12,7 @@ TagManager:
   - selectedCricles
   - circles
   - bureau
+  - XBtn
   layers:
   - Default
   - TransparentFX
