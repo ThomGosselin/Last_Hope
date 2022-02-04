@@ -11,10 +11,8 @@ public class LaunchMiniGame : MonoBehaviour
     private int temp;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.tag);
         if(collision.CompareTag("Player"))
         {
-            Debug.Log(collision.tag);
             isThereAcollision = true;
         }
     }
@@ -28,7 +26,6 @@ public class LaunchMiniGame : MonoBehaviour
     {
         if (isThereAcollision == true)
         {
-            Debug.Log("Jeu");
             if (Input.GetKey(KeyCode.E))
             {
                 MiniGame1.SetActive(true);

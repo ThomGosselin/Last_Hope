@@ -23,7 +23,6 @@ public class CountDown : MonoBehaviour
             yield return new WaitForSeconds(1f);
             currentTime--;
         }
-        Debug.Log("notime");
         
     }
 }

@@ -41,7 +41,6 @@ public class unlockVault : MonoBehaviour
             circleTab[i].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
 
         }
-        Debug.Log("start");
     }
 
 
@@ -60,7 +59,6 @@ public class unlockVault : MonoBehaviour
                 circleTab[randomCircle - 1].transform.gameObject.tag = "selectedCricles";
                 circleTab[randomCircle - 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
                 selectedCircleTab.Add(circleTab[randomCircle - 1]);
-                Debug.Log(selectedCircleTab.Count);
                 oldNumber = randomCircle;
             }
 

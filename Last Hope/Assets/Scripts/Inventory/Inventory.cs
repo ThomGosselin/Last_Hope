@@ -20,7 +20,6 @@ public class Inventory : MonoBehaviour
         ObjEnContact = collision.gameObject.GetComponent<ObjDesc>();
         if (collision.CompareTag("Objets"))
         {
-            Debug.Log("je suis la");
             objectToPickup = true;
         }
     }
@@ -38,7 +37,6 @@ public class Inventory : MonoBehaviour
             {
                 if( inventorySpaces.Length == 7)
                 {
-                    Debug.Log("im full");
                     FindObjectOfType<AudioManager>().Play("InvFull");
                 }
                 else
@@ -72,7 +70,6 @@ public class Inventory : MonoBehaviour
         {
             if (imgObj.sprite == null)
             {
-                Debug.Log("ajout dans l'inventaire");
                 imgObj.sprite = ObjEnContact.ObjIcon;
                 break;
             }
