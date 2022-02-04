@@ -612,6 +612,7 @@ MonoBehaviour:
   player: {fileID: 1886971559}
   itemKey1: {fileID: 621132881}
   hitBox: {fileID: 740242632}
+  hitBox2: {fileID: 841414678}
 --- !u!1 &102289866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,7 +2709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 485471453}
   backgroundTimer: {fileID: 537929330}
-  duration: 900
+  duration: 300
   currentTime: 10
 --- !u!1 &496960513
 GameObject:
@@ -5726,6 +5727,7 @@ MonoBehaviour:
   xBtn: {fileID: 0}
   hitbox: {fileID: 740242632}
   isThereAcollision: 0
+  toDestroyHitBox: 0
 --- !u!50 &740242635
 Rigidbody2D:
   serializedVersion: 4
@@ -14007,6 +14009,7 @@ MonoBehaviour:
   xBtn: {fileID: 1259767883}
   hitbox: {fileID: 1953750695}
   isThereAcollision: 0
+  toDestroyHitBox: 0
 --- !u!1 &1971368021
 GameObject:
   m_ObjectHideFlags: 0
@@ -14338,6 +14341,7 @@ MonoBehaviour:
   xBtn: {fileID: 311188454}
   hitbox: {fileID: 2100415059}
   isThereAcollision: 0
+  toDestroyHitBox: 0
 --- !u!4 &2100415061
 Transform:
   m_ObjectHideFlags: 0
