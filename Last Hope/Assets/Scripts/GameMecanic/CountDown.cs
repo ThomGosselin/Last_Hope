@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CountDown : MonoBehaviour
 {
     [SerializeField] Text timeText;
+    [SerializeField] Image backgroundTimer;
     [SerializeField] float duration, currentTime;
     void Start()
     {
