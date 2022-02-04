@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 8461be5a71c5ec0409786dbebde7035d
+guid: 074a8ba8e9d176b42b02b4ff02b2654e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6117688389378423592
-    second: bureau_0
+      213: 8383029364537482376
+    second: persoMarcheFace 1_0
   - first:
-      213: -8615322955664584723
-    second: bureau_1
+      213: -2503749543981408574
+    second: persoMarcheFace 1_1
   - first:
-      213: -6257601902077074482
-    second: bureau_2
+      213: 465252263021906262
+    second: persoMarcheFace 1_2
+  - first:
+      213: -1292298318224605145
+    second: persoMarcheFace 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 62.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -77,7 +80,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -89,7 +92,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +104,19 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,92 +127,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bureau_0
+      name: persoMarcheFace 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: -8}
-      - - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82bbe6f5d2566e450800000000000000
-      internalID: 6117688389378423592
+      spriteID: 88cdce6bac0865470800000000000000
+      internalID: 8383029364537482376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bureau_1
+      name: persoMarcheFace 1_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 24
         y: 0
-        width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: -8}
-      - - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
-      - - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def0852fa69307880800000000000000
-      internalID: -8615322955664584723
+      spriteID: 2ce11702e05e04dd0800000000000000
+      internalID: -2503749543981408574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bureau_2
+      name: persoMarcheFace 1_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
-        width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: 2}
-        - {x: 8, y: 2}
-        - {x: 8, y: -8}
-      - - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: -8, y: -8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec323e869388829a0800000000000000
-      internalID: -6257601902077074482
+      spriteID: 6590e5cd778e47600800000000000000
+      internalID: 465252263021906262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: persoMarcheFace 1_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7204366c685d01ee0800000000000000
+      internalID: -1292298318224605145
       vertices: []
       indices: 
       edges: []

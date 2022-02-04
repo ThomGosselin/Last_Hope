@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: cba82b381c9f2d2489e698fcd8c67129
+guid: 591d03a04ab657e41a0c373a4e007c29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6737499955288717914
-    second: persoMarcheFace_0
+      213: 5926540453079700123
+    second: ChaiseBureau_0
   - first:
-      213: -881808009679272597
-    second: persoMarcheFace_1
-  - first:
-      213: -1589077286294208493
-    second: persoMarcheFace_2
-  - first:
-      213: 8710920881693536194
-    second: persoMarcheFace_3
+      213: -7649811301574096582
+    second: ChaiseBureau_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 62.5
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,101 +105,55 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: persoMarcheFace_0
+      name: ChaiseBureau_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 1}
+        - {x: 8, y: 1}
+        - {x: 8, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b925cc4542d4f3250800000000000000
+      internalID: 5926540453079700123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChaiseBureau_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 16
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: 1}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 4, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: a5ab1353388608d50800000000000000
-      internalID: 6737499955288717914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: persoMarcheFace_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6509f6894033c3f0800000000000000
-      internalID: -881808009679272597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: persoMarcheFace_2
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 310cacd90a672f9e0800000000000000
-      internalID: -1589077286294208493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: persoMarcheFace_3
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cf20e3b36863e870800000000000000
-      internalID: 8710920881693536194
+      spriteID: a3948e2d62966d590800000000000000
+      internalID: -7649811301574096582
       vertices: []
       indices: 
       edges: []

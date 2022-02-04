@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 1fac6a09cbcfb1b488eac188cbcaaf09
+guid: 2ccba7d4223f57f4697679b286a9b0d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7781595286780662908
-    second: persoIdleFace_0
+      213: 7654417244826114326
+    second: persoIdleFace 1_0
   - first:
-      213: 1701376086118732995
-    second: persoIdleFace_1
+      213: 2087673870043576374
+    second: persoIdleFace 1_1
   - first:
-      213: -5698812975019301532
-    second: persoIdleFace_2
+      213: -2488163137098204400
+    second: persoIdleFace 1_2
   - first:
-      213: -5619043380031851085
-    second: persoIdleFace_3
+      213: 3371819098095318294
+    second: persoIdleFace 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -80,7 +80,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +92,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +104,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +116,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: persoIdleFace_0
+      name: persoIdleFace 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -135,20 +135,20 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c745a664fa7cdfb60800000000000000
-      internalID: 7781595286780662908
+      spriteID: 6191c78ede3f93a60800000000000000
+      internalID: 7654417244826114326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: persoIdleFace_1
+      name: persoIdleFace 1_1
       rect:
         serializedVersion: 2
         x: 24
@@ -156,20 +156,20 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4937a39808c9710800000000000000
-      internalID: 1701376086118732995
+      spriteID: 638ffc6e258e8fc10800000000000000
+      internalID: 2087673870043576374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: persoIdleFace_2
+      name: persoIdleFace 1_2
       rect:
         serializedVersion: 2
         x: 48
@@ -177,20 +177,20 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4656696facfb9e0b0800000000000000
-      internalID: -5698812975019301532
+      spriteID: 01b3a064fc4487dd0800000000000000
+      internalID: -2488163137098204400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: persoIdleFace_3
+      name: persoIdleFace 1_3
       rect:
         serializedVersion: 2
         x: 72
@@ -198,14 +198,14 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b5f0bb11d52502b0800000000000000
-      internalID: -5619043380031851085
+      spriteID: 61579d4ea9b1bce20800000000000000
+      internalID: 3371819098095318294
       vertices: []
       indices: 
       edges: []
