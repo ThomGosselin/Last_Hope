@@ -10,11 +10,23 @@ public class launchImg : MonoBehaviour
     public GameObject xBtn;
     public BoxCollider2D hitbox;
     public bool isThereAcollision = false;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public bool toDestroyHitBox = false;
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             isThereAcollision = true;
+        }
+        /*
+        switch (collision.CompareTag())
+        {
+            case bureau:
+                toDestroyHitBox = true; //a essayer de faire fonctionner
+                break;
+        }*/
+        if (collision.CompareTag("bureau"))
+        {
+            toDestroyHitBox = true;
         }
     }
 
@@ -28,6 +40,10 @@ public class launchImg : MonoBehaviour
                 xBtn.SetActive(true);
                 player.SetActive(false);
                 isThereAcollision = false;
+                if (toDestroyHitBox)
+                {
+                    Destroy(hitbox);
+                }
             }
         }
     }

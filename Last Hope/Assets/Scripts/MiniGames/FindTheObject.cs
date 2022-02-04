@@ -10,6 +10,7 @@ public class FindTheObject : MonoBehaviour
     public GameObject player;
     public GameObject itemKey1;
     public BoxCollider2D hitBox;
+    public GameObject hitBox2;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,6 +32,7 @@ public class FindTheObject : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
                 itemKey1.SetActive(true);
                 Destroy(hitBox);
+                Destroy(hitBox2);
             }
         }
         
