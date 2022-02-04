@@ -11,10 +11,17 @@ public class LaunchMiniGame : MonoBehaviour
     private int temp;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.tag);
         if(collision.CompareTag("Player"))
         {
+            Debug.Log(collision.tag);
             isThereAcollision = true;
         }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        isThereAcollision = false;
     }
 
     private void FixedUpdate()
