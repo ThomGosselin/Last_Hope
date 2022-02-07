@@ -10,9 +10,14 @@ public class Simon : MonoBehaviour
     public List<AudioClip> buttonSoundsList = new List<AudioClip>();
     public List<List<Color32>> buttonColors = new List<List<Color32>>();
     public List<Button> clickableButtons;
+    public int levelsToComplete;
+    private int currentLevel = 1;
     public AudioSource audioSource;
     public CanvasGroup buttons;
     public GameObject startButton;
+    public GameObject gameGrid;
+    public GameObject player;
+    public GameObject key;
 
     public void Awake()
     {
@@ -44,7 +49,16 @@ public class Simon : MonoBehaviour
         }
         if(playerSequenceList.Count == playerTaskList.Count)
         {
-            StartCoroutine(StartNextRound());
+            
+            if (currentLevel == levelsToComplete)
+            {
+                FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+            }
+            else{
+                StartCoroutine(StartNextRound());
+                currentLevel++;
+            }
+            
         }
     }
 
