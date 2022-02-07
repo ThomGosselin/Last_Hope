@@ -6882,6 +6882,7 @@ MonoBehaviour:
   - {fileID: 35528804}
   - {fileID: 512588970}
   levelsToComplete: 4
+  currentLevel: 0
   audioSource: {fileID: 1693230416}
   buttons: {fileID: 310187375}
   startButton: {fileID: 725300877}
@@ -7582,7 +7583,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: -7369406171972856130, guid: e15ea21399ba1d246856c4556c3c3931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7602,7 +7603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589396301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.75, y: -4.22, z: 0}
+  m_LocalPosition: {x: -12.21, y: 1.92, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 849425544}

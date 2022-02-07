@@ -11,7 +11,7 @@ public class Simon : MonoBehaviour
     public List<List<Color32>> buttonColors = new List<List<Color32>>();
     public List<Button> clickableButtons;
     public int levelsToComplete;
-    private int currentLevel = 1;
+    public int currentLevel = 0;
     public AudioSource audioSource;
     public CanvasGroup buttons;
     public GameObject startButton;
@@ -52,6 +52,10 @@ public class Simon : MonoBehaviour
             
             if (currentLevel == levelsToComplete)
             {
+                Debug.Log("bravo");
+                gameGrid.SetActive(false);
+                player.SetActive(true);
+                key.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             }
             else{
