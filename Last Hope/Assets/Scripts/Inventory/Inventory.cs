@@ -45,13 +45,13 @@ public class Inventory : MonoBehaviour
                     switch (objets.name)
                     {
                         case "Key1":
-                            FindObjectOfType<Level1Manager>().key1Good = true;
+                            FindObjectOfType<LevelsManager>().key1Good = true;
                             break;
                         case "Key2":
-                            FindObjectOfType<Level1Manager>().key2Good = true;
+                            FindObjectOfType<LevelsManager>().key2Good = true;
                             break;
                         case "Key3":
-                            FindObjectOfType<Level1Manager>().key3Good = true;
+                            FindObjectOfType<LevelsManager>().key3Good = true;
                             break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
