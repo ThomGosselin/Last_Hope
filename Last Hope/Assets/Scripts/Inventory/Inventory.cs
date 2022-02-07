@@ -54,6 +54,7 @@ public class Inventory : MonoBehaviour
                             FindObjectOfType<LevelsManager>().key3Good = true;
                             break;
                     }
+                    Debug.Log("son");
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
                     objectToPickup = false;
