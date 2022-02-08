@@ -18,7 +18,7 @@ public class ReconnaissanceVocal : MonoBehaviour
     void Start()
     {
 
-        keywordActions.Add("test", MiniGameLvl1);
+        keywordActions.Add("la vague", MiniGameLvl1);
 
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
