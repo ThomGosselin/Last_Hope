@@ -947,6 +947,9 @@ MonoBehaviour:
   key2Good: 0
   key3Good: 0
   lvl: 0
+  canvasBG: {fileID: 0}
+  lvl2Unlock: {fileID: 0}
+  lvl3Unlock: {fileID: 0}
 --- !u!4 &124343604
 Transform:
   m_ObjectHideFlags: 0
@@ -13601,7 +13604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1756600268
 Transform:
   m_ObjectHideFlags: 0
