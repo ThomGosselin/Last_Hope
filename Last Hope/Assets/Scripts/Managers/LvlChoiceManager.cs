@@ -36,27 +36,6 @@ public class LvlChoiceManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (lvl1Complete)
-        {
-            levelUnlock = 2;
-            Save();
-        }
-        else if (lvl2Complete)
-        {
-            levelUnlock = 3;
-            Save();
-        }
-    }
-
-
-
-    private void Save()
-    {
-        PlayerPrefs.SetFloat("levelProgress", levelUnlock);
-    }
 
     private void Load()
     {

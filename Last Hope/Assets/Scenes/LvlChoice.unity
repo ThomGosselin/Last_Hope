@@ -592,7 +592,9 @@ MonoBehaviour:
   lvl1Complete: 0
   lvl2Complete: 0
   lvl3Complete: 0
+  levelUnlock: 0
   canvasBG: {fileID: 721846717}
+  lvl1Unlock: {fileID: 21300000, guid: b120cf9d544973c4ea7c222bc30ec584, type: 3}
   lvl2Unlock: {fileID: 21300000, guid: 3d79ff5d8d0b3dd429ce386528d74dc5, type: 3}
   lvl3Unlock: {fileID: 0}
 --- !u!4 &1034936328

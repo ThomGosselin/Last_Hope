@@ -10,8 +10,9 @@ public class LevelsManager : MonoBehaviour
     public bool key1Good;
     public bool key2Good;
     public bool key3Good;
+    public Image gameobject;
     public int lvl=0;
-
+    private int levelUnlock;
 
     public void Update()
     {
@@ -25,12 +26,15 @@ public class LevelsManager : MonoBehaviour
             {
                 case 0:
                     Debug.Log("cinematique1");
-                    FindObjectOfType<LvlChoiceManager>().lvl1Complete = true;
+                    levelUnlock = 2;
+                    PlayerPrefs.SetFloat("levelProgress", levelUnlock);
                     lvl = 1;
                     //code qui sauvegarde le playerpref des niveau debloquer avec le save & le load
                     break;
                 case 1:
                     Debug.Log("cinematique2");
+                    levelUnlock = 3;
+                    PlayerPrefs.SetFloat("levelProgress", levelUnlock);
                     lvl = 2;
                     break;
                 case 2:
