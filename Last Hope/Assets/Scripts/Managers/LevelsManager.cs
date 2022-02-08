@@ -31,6 +31,7 @@ public class LevelsManager : MonoBehaviour
                     Debug.Log("cinematique1");
                     canvasBG.sprite = lvl2Unlock;
                     lvl = 1;
+                    //code qui sauvegarde le playerpref des niveau debloquer avec le save & le load
                     break;
                 case 1:
                     Debug.Log("cinematique2");
