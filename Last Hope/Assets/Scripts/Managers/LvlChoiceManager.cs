@@ -14,6 +14,7 @@ public class LvlChoiceManager : MonoBehaviour
     public int levelUnlock;
 
     public Image canvasBG;
+    public Sprite lvl1Unlock;
     public Sprite lvl2Unlock;
     public Sprite lvl3Unlock;
     // Start is called before the first frame update
@@ -22,6 +23,16 @@ public class LvlChoiceManager : MonoBehaviour
         lvl1Complete = false;
         lvl2Complete = false;
         lvl3Complete = false;
+
+        if (!PlayerPrefs.HasKey("levelProgress"))
+        {
+            PlayerPrefs.SetInt("levelProgress", 1);
+            Load();
+        }
+        else
+        {
+            Load();
+        }
 
     }
 
@@ -51,13 +62,17 @@ public class LvlChoiceManager : MonoBehaviour
     {
         levelUnlock = PlayerPrefs.GetInt("levelProgress");
 
-        if(levelUnlock == 2)
+        switch (levelUnlock)
         {
-            canvasBG.sprite = lvl2Unlock;
-        }
-        else if (levelUnlock == 3)
-        {
-            canvasBG.sprite = lvl3Unlock;
+            case 1:
+                canvasBG.sprite = lvl1Unlock;
+                break;
+            case 2:
+                canvasBG.sprite = lvl2Unlock;
+                break;
+            case 3:
+                canvasBG.sprite = lvl3Unlock;
+                break;
         }
     }
 }
