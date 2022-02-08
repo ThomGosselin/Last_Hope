@@ -15,6 +15,7 @@ public static class Loader
         LvlChoice,
         Game_Level1,
         Main_Menu,
+        TempSceneAfterLevel1,
     }
 
     private static Action onLoaderCallback;

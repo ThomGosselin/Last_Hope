@@ -35,6 +35,7 @@ public class LevelsManager : MonoBehaviour
                     Debug.Log("cinematique3");
                     break;
             }
+            Loader.Load(Loader.Scene.TempSceneAfterLevel1);
         }
     }
 }

@@ -13,6 +13,7 @@ public class unlockCadenas : MonoBehaviour
     public string passcode;
     public GameObject cadenasGame;
     public GameObject tiroir;
+    public GameObject xBtn;
     // Start is called before the first frame update
 
     // Update is called once per frame
