@@ -7,6 +7,6 @@ public class LvlChoice : MonoBehaviour
 {
     public void GoToLvl1()
     {
-        Loader.Load(Loader.Scene.Game_Level1);
+        Loader.Load(Loader.Scene.CinematiqueLVL1);
     }
 }

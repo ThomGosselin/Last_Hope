@@ -16,6 +16,7 @@ public static class Loader
         Game_Level1,
         Main_Menu,
         TempSceneAfterLevel1,
+        CinematiqueLVL1,
     }
 
     private static Action onLoaderCallback;

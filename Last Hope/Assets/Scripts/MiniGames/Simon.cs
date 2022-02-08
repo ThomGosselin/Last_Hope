@@ -52,7 +52,6 @@ public class Simon : MonoBehaviour
             
             if (currentLevel == levelsToComplete)
             {
-                Debug.Log("bravo");
                 gameGrid.SetActive(false);
                 player.SetActive(true);
                 key.SetActive(true);

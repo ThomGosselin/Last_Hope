@@ -8690,7 +8690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imgCadenas: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 249196742}
   xBtn: {fileID: 1328675145}
   hitbox: {fileID: 0}
   isThereAcollision: 0
@@ -15477,7 +15477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041103939}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: interieur livre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
