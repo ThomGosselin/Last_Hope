@@ -12,6 +12,10 @@ public class LevelsManager : MonoBehaviour
     public bool key3Good;
     public int lvl=0;
 
+    public Image canvasBG;
+    public Sprite lvl2Unlock;
+    public Sprite lvl3Unlock;
+
 
     public void Update()
     {
@@ -25,10 +29,12 @@ public class LevelsManager : MonoBehaviour
             {
                 case 0:
                     Debug.Log("cinematique1");
+                    canvasBG.sprite = lvl2Unlock;
                     lvl = 1;
                     break;
                 case 1:
                     Debug.Log("cinematique2");
+                    canvasBG.sprite = lvl3Unlock;
                     lvl = 2;
                     break;
                 case 2:
