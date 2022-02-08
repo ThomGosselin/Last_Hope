@@ -947,9 +947,6 @@ MonoBehaviour:
   key2Good: 0
   key3Good: 0
   lvl: 0
-  canvasBG: {fileID: 0}
-  lvl2Unlock: {fileID: 0}
-  lvl3Unlock: {fileID: 0}
 --- !u!4 &124343604
 Transform:
   m_ObjectHideFlags: 0
@@ -1780,8 +1777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 364.7, y: -283.3}
-  m_SizeDelta: {x: 32.87, y: 30}
+  m_AnchoredPosition: {x: 244.2, y: -188.8}
+  m_SizeDelta: {x: 32.41, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311286940
 MonoBehaviour:
@@ -6199,7 +6196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 424.9, y: -283.3}
+  m_AnchoredPosition: {x: 283.8, y: -188.8}
   m_SizeDelta: {x: 32.87, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778733390
@@ -12013,7 +12010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548.9, y: -283.3}
+  m_AnchoredPosition: {x: 364.7, y: -188.8}
   m_SizeDelta: {x: 32.87, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372047377
@@ -12719,8 +12716,8 @@ Canvas:
   m_GameObject: {fileID: 1481860391}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1285067412}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -12729,7 +12726,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1529372192
 GameObject:
@@ -13280,7 +13277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 487.4, y: -283.3}
+  m_AnchoredPosition: {x: 326.9, y: -188.8}
   m_SizeDelta: {x: 32.87, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1670468291
