@@ -9,17 +9,21 @@ using UnityEngine.UI;
 public class unlockCadenas : MonoBehaviour
 {
 
-    public InputField userInput;
+    public InputField chiffre1;
+    public InputField chiffre2;
+    public InputField chiffre3;
+    public InputField chiffre4;
+    private string userPassword;
     public string passcode;
     public GameObject cadenasGame;
     public GameObject tiroir;
     public GameObject xBtn;
-    // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
     {
-        if(userInput.text == passcode)
+        userPassword = chiffre1.text + chiffre2.text + chiffre3.text + chiffre4.text;
+        if(userPassword == passcode)
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             cadenasGame.SetActive(false);
