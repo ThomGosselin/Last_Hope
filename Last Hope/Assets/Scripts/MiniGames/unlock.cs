@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class unlock : MonoBehaviour
 {
     public string Code;
+    public string userInputCode;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,21 +16,43 @@ public class unlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            Debug.Log("left");
+            AddLeft();
+         
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Debug.Log("Down");
+            AddDown();
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("Up");
+            AddUp();
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            Debug.Log("Right");
+            AddRight();
         }
+        if(userInputCode == Code)
+        {
+            Debug.Log("got it");
+        }
+    }
+
+    public void AddLeft()
+    {
+        Debug.Log("Left");
+    }
+    public void AddDown()
+    {
+        Debug.Log("Left");
+    }
+    public void AddUp()
+    {
+        Debug.Log("Left");
+    }
+    public void AddRight()
+    {
+        Debug.Log("Left");
     }
 }
