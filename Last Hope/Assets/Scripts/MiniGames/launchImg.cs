@@ -17,13 +17,6 @@ public class launchImg : MonoBehaviour
         {
             isThereAcollision = true;
         }
-        /*
-        switch (collision.CompareTag())
-        {
-            case bureau:
-                toDestroyHitBox = true; //a essayer de faire fonctionner
-                break;
-        }*/
         if (collision.CompareTag("bureau"))
         {
             toDestroyHitBox = true;
