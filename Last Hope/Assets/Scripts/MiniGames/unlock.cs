@@ -7,6 +7,8 @@ public class unlock : MonoBehaviour
 {
     public string Code;
     public string userInputCode;
+    public int nbrOfKey;
+    public int currentNbrOfKey = 1;
     public GameObject gameGrid;
     public GameObject Xbtn;
     public GameObject Player;
@@ -37,36 +39,75 @@ public class unlock : MonoBehaviour
         {
             AddRight();
         }
-        if(userInputCode == Code)
-        {
-            Debug.Log("got it");
-            closeGame();
-        }
     }
 
     public void AddLeft()
     {
         Debug.Log("Left");
         userInputCode = userInputCode + "left";
+        currentNbrOfKey++;
+        if (currentNbrOfKey== nbrOfKey)
+        {
+            checkUserCode();
+        }
     }
     public void AddDown()
     {
         Debug.Log("Down");
         userInputCode = userInputCode + "down";
+        currentNbrOfKey++;
+        if (currentNbrOfKey == nbrOfKey)
+        {
+            checkUserCode();
+        }
     }
     public void AddUp()
     {
         Debug.Log("Up");
         userInputCode = userInputCode + "up";
+        currentNbrOfKey++;
+        if (currentNbrOfKey == nbrOfKey)
+        {
+            checkUserCode();
+        }
     }
     public void AddRight()
     {
         Debug.Log("Right");
         userInputCode = userInputCode + "right";
+        currentNbrOfKey++;
+        if (currentNbrOfKey == nbrOfKey)
+        {
+            checkUserCode();
+        }
     }
     public void closeGame()
     {
         userInputCode = "";
         Debug.Log("end");
+        Player.SetActive(true);
+        gameGrid.SetActive(false);
+        Xbtn.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+    }
+
+    public void RestartGame()
+    {
+        userInputCode = "";
+        currentNbrOfKey = 0;
+        FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
+    }
+
+    public void checkUserCode()
+    {
+        if (userInputCode == Code)
+        {
+            Debug.Log("got it");
+            closeGame();
+        }
+        else
+        {
+            RestartGame();
+        }
     }
 }
