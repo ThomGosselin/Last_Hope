@@ -2709,7 +2709,7 @@ MonoBehaviour:
     loop: 0
   - name: goodChoice
     clip: {fileID: 8300000, guid: 79f4c3ba6285b4b4f8053574a1f4293c, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
     loop: 0
