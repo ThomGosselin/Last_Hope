@@ -13,14 +13,14 @@ public class Puzzle : MonoBehaviour
 
     public Sprite[] sprites;
 
+    public List<Sprite> userGrid;
+
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(sprites);
         Init();
-        for (int i = 0;i< 999; i++)
-        {
-            Shuffle();
-        }
+        Shuffle();
     }
 
     void Init()
