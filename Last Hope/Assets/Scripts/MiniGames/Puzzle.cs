@@ -37,7 +37,7 @@ public class Puzzle : MonoBehaviour
                 numberBox box = Instantiate(boxPrefab, parent.transform);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
                 boxes[x, y] = box;
-                Originalboxes = boxes;
+                Originalboxes = (numberBox[,])boxes.Clone();
                 n++;
             }
     }
@@ -155,8 +155,9 @@ public class Puzzle : MonoBehaviour
         {
             for (int j = 0; j < 4; j++)
             {
-                if( boxes[i,j] != Originalboxes[i, j])
+                if (Originalboxes[i,j] != boxes[i, j])
                 {
+                    Debug.Log("je suis dans le if");
                     return;
                 }
             }
