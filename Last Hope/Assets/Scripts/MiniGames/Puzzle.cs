@@ -7,6 +7,8 @@ public class Puzzle : MonoBehaviour
 
     public numberBox boxPrefab;
 
+    public GameObject parent;
+
     public numberBox[,] boxes = new numberBox[4, 4];
 
     public Sprite[] sprites;
@@ -27,7 +29,7 @@ public class Puzzle : MonoBehaviour
         for(int y = 3; y >= 0; y--)
         for(int x = 0; x < 4; x++)
             {
-                numberBox box = Instantiate(boxPrefab, new Vector2(x, y), Quaternion.identity);
+                numberBox box = Instantiate(boxPrefab, parent.transform);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
                 boxes[x, y] = box;
                 n++;

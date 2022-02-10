@@ -9174,7 +9174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711830455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.654602, y: 2.31, z: 12.100004}
+  m_LocalPosition: {x: -5.61, y: 3.76, z: 12.100004}
   m_LocalScale: {x: 83.0731, y: 101.47251, z: 1}
   m_Children:
   - {fileID: 2041103939}
@@ -10404,7 +10404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965203351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.55, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1419837980}
@@ -10423,6 +10423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxPrefab: {fileID: 4374260906268958444, guid: 4e750496d671ce44494567fb972906d9, type: 3}
+  parent: {fileID: 1419837979}
   sprites:
   - {fileID: -8506735889323900786, guid: 0893ca704af7f7e4d8ad77cfd5e28dd6, type: 3}
   - {fileID: 5888589322348927482, guid: 0893ca704af7f7e4d8ad77cfd5e28dd6, type: 3}
@@ -10664,7 +10665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006863557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.83, y: 1.5406389, z: 10.195998}
+  m_LocalPosition: {x: -14.69, y: 1.5406389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1419837980}

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class numberBox : MonoBehaviour
 {
-    public int index = 0;
+    public int index = 1;
     int x = 0;
     int y = 0;
 
