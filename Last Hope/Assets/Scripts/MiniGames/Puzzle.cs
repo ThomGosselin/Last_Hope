@@ -10,17 +10,22 @@ public class Puzzle : MonoBehaviour
     public GameObject parent;
 
     public numberBox[,] boxes = new numberBox[4, 4];
+    //public numberBox[,] Originalboxes = new numberBox[4, 4];
+
 
     public Sprite[] sprites;
+    public numberBox oldSprite;
+    private numberBox newSprite;
 
-    public List<Sprite> userGrid;
 
-    // Start is called before the first frame update
     void Start()
     {
         Debug.Log(sprites);
         Init();
-        Shuffle();
+        for (int i = 0; i < 999; i++)
+        {
+            Shuffle();
+        }
     }
 
     void Init()
@@ -30,6 +35,7 @@ public class Puzzle : MonoBehaviour
         for(int x = 0; x < 4; x++)
             {
                 numberBox box = Instantiate(boxPrefab, parent.transform);
+                //Originalboxes[x,y].Add(box);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
                 boxes[x, y] = box;
                 n++;
@@ -46,6 +52,8 @@ public class Puzzle : MonoBehaviour
     void Swap(int x, int y, int Dx, int Dy)
     {
         var from = boxes[x, y];
+       // oldSprite = boxes[x, y].GetComponent<Sprite>();
+       // Debug.Log(oldSprite.name);
         var target = boxes[x + Dx, y + Dy];
 
         //swap this 2 boxes
@@ -104,6 +112,7 @@ public class Puzzle : MonoBehaviour
                 {
                     Vector2 pos = getValidMove(i, j);
                     Swap(i, j, (int)pos.x, (int)pos.y);
+
                 }
             }
         }
