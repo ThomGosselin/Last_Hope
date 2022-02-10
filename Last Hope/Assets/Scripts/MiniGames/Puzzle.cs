@@ -9,8 +9,8 @@ public class Puzzle : MonoBehaviour
 
     public GameObject parent;
 
-    public numberBox[,] boxes = new numberBox[4, 4];
-    public numberBox[,] Originalboxes = new numberBox[4, 4];
+    public numberBox[,] boxes = new numberBox[3, 3];
+    public numberBox[,] Originalboxes = new numberBox[3, 3];
 
 
     public Sprite[] sprites;
@@ -31,8 +31,8 @@ public class Puzzle : MonoBehaviour
     void Init()
     {
         int n = 0;
-        for(int y = 3; y >= 0; y--)
-        for(int x = 0; x < 4; x++)
+        for(int y = 2; y >= 0; y--) //pt a remonter a 3
+        for(int x = 0; x < 3; x++)
             {
                 numberBox box = Instantiate(boxPrefab, parent.transform);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
@@ -67,7 +67,7 @@ public class Puzzle : MonoBehaviour
     int getDx(int x, int y)
     {
         //is right empty
-        if (x < 3 && boxes[x + 1, y].isEmpty())
+        if (x < 2 && boxes[x + 1, y].isEmpty())
         {
             return 1;
         }
@@ -86,7 +86,7 @@ public class Puzzle : MonoBehaviour
     int getDy(int x, int y)
     {
         //is top empty
-        if (y < 3 && boxes[x, y + 1].isEmpty())
+        if (y < 2 && boxes[x, y + 1].isEmpty())
         {
             return 1;
         }
@@ -103,9 +103,9 @@ public class Puzzle : MonoBehaviour
 
     void Shuffle()
     {
-        for(int i =0; i<4; i++)
+        for(int i =0; i<3; i++)
         {
-            for (int j =0; j<4; j++)
+            for (int j =0; j<3; j++)
             {
                 if (boxes[i, j].isEmpty())
                 {
@@ -151,9 +151,9 @@ public class Puzzle : MonoBehaviour
 
     void checkWin()
     {
-       for(int i = 0; i < 4; i++)
+       for(int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 4; j++)
+            for (int j = 0; j < 3; j++)
             {
                 if (Originalboxes[i,j] != boxes[i, j])
                 {
