@@ -10,7 +10,7 @@ public class Puzzle : MonoBehaviour
     public GameObject parent;
 
     public numberBox[,] boxes = new numberBox[4, 4];
-    //public numberBox[,] Originalboxes = new numberBox[4, 4];
+    public numberBox[,] Originalboxes = new numberBox[4, 4];
 
 
     public Sprite[] sprites;
@@ -35,9 +35,9 @@ public class Puzzle : MonoBehaviour
         for(int x = 0; x < 4; x++)
             {
                 numberBox box = Instantiate(boxPrefab, parent.transform);
-                //Originalboxes[x,y].Add(box);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
                 boxes[x, y] = box;
+                Originalboxes = boxes;
                 n++;
             }
     }
@@ -46,14 +46,13 @@ public class Puzzle : MonoBehaviour
         int Dx = getDx(x, y);
         int Dy = getDy(x, y);
         Swap(x, y, Dx, Dy);
+        checkWin();
        
     }
 
     void Swap(int x, int y, int Dx, int Dy)
     {
         var from = boxes[x, y];
-       // oldSprite = boxes[x, y].GetComponent<Sprite>();
-       // Debug.Log(oldSprite.name);
         var target = boxes[x + Dx, y + Dy];
 
         //swap this 2 boxes
@@ -148,5 +147,20 @@ public class Puzzle : MonoBehaviour
     bool isRepeatMove(Vector2 pos)
     {
         return pos * -1 == lastMove;
+    }
+
+    void checkWin()
+    {
+       for(int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                if( boxes[i,j] != Originalboxes[i, j])
+                {
+                    return;
+                }
+            }
+        }
+        Debug.Log("win");
     }
 }
