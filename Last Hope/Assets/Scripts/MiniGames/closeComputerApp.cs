@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class OpenWord : MonoBehaviour
+public class closeComputerApp : MonoBehaviour
 {
-    public GameObject currentComputerScreen;
-    public GameObject wordApplication;
+    public GameObject currentApp;
+    public GameObject desktop;
     public GameObject xBtn;
-
-    
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -19,11 +17,11 @@ public class OpenWord : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
-            if (hit.collider.CompareTag("icnWord"))
+            if (hit.collider.CompareTag("XBtn"))
             {
-                currentComputerScreen.SetActive(false);
-                wordApplication.SetActive(true);
-                xBtn.SetActive(true);
+                currentApp.SetActive(false);
+                desktop.SetActive(true);
+                xBtn.SetActive(false);
             }
         }
     }
