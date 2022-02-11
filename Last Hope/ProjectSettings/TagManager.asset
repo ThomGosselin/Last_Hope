@@ -15,6 +15,7 @@ TagManager:
   - XBtn
   - ground
   - bouton
+  - icnWord
   layers:
   - Default
   - TransparentFX
