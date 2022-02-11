@@ -12,6 +12,7 @@ public class unlock : MonoBehaviour
     public GameObject gameGrid;
     public GameObject Xbtn;
     public GameObject Player;
+    public GameObject UsbKey;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +89,7 @@ public class unlock : MonoBehaviour
         Player.SetActive(true);
         gameGrid.SetActive(false);
         Xbtn.SetActive(false);
+        UsbKey.SetActive(true);
         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
     }
 
