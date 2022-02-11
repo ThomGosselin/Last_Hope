@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class closeComputerApp : MonoBehaviour
+public class openCamera : MonoBehaviour
 {
-    public GameObject currentApp;
-    public GameObject desktop;
+    public GameObject currentComputerScreen;
+    public GameObject appToOpen;
     public GameObject xBtn;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,15 +17,12 @@ public class closeComputerApp : MonoBehaviour
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (!hit)
+
+            if (hit.collider.CompareTag("icnCamera"))
             {
-                return;
-            }
-            if (hit.collider.CompareTag("XBtn")|| hit.collider.CompareTag("icnCamera"))
-            {
-                currentApp.SetActive(false);
-                desktop.SetActive(true);
-                xBtn.SetActive(false);
+                currentComputerScreen.SetActive(false);
+                appToOpen.SetActive(true);
+                xBtn.SetActive(true);
             }
         }
     }

@@ -16,6 +16,7 @@ TagManager:
   - ground
   - bouton
   - icnWord
+  - icnCamera
   layers:
   - Default
   - TransparentFX

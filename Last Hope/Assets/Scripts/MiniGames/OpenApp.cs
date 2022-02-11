@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OpenWord : MonoBehaviour
+public class OpenApp : MonoBehaviour
 {
     public GameObject currentComputerScreen;
-    public GameObject wordApplication;
+    public GameObject appToOpen;
+    public GameObject CameraToOpen;
     public GameObject xBtn;
 
     
@@ -21,8 +22,16 @@ public class OpenWord : MonoBehaviour
 
             if (hit.collider.CompareTag("icnWord"))
             {
+                Debug.Log("word");
                 currentComputerScreen.SetActive(false);
-                wordApplication.SetActive(true);
+                appToOpen.SetActive(true);
+                xBtn.SetActive(true);
+            }
+            if (hit.collider.CompareTag("icnCamera"))
+            {
+                Debug.Log("camera");
+                currentComputerScreen.SetActive(false);
+                CameraToOpen.SetActive(true);
                 xBtn.SetActive(true);
             }
         }
