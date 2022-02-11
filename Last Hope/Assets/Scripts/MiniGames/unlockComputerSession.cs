@@ -15,6 +15,7 @@ public class unlockComputerSession : MonoBehaviour
     public string passcode;
     public GameObject currentcomptuerScreen;
     public GameObject desktop;
+    public GameObject cameraScreen;
     public GameObject xBtn;
 
     // Update is called once per frame
@@ -25,7 +26,10 @@ public class unlockComputerSession : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             currentcomptuerScreen.SetActive(false);
-            desktop.SetActive(true);
+            currentcomptuerScreen.SetActive(false);
+            cameraScreen.SetActive(true);
+            xBtn.SetActive(true);
+
         }
     }
 }
