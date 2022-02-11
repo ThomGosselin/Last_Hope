@@ -22,7 +22,7 @@ public class LaunchMiniGame : MonoBehaviour
         isThereAcollision = false;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (isThereAcollision == true)
         {
