@@ -16,6 +16,13 @@ public class Puzzle : MonoBehaviour
     public Sprite[] sprites;
     public numberBox oldSprite;
     private numberBox newSprite;
+    [Header("Camera Settings")]
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject GameGrid;
+    [SerializeField] private GameObject Xbtn;
+    [SerializeField] private GameObject Key;
+
+
 
 
     void Start()
@@ -162,6 +169,11 @@ public class Puzzle : MonoBehaviour
                 }
             }
         }
-        Debug.Log("win");
+        player.SetActive(true);
+        Key.SetActive(true);
+        GameGrid.SetActive(false);
+        Xbtn.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+
     }
 }
