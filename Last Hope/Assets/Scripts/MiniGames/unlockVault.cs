@@ -19,6 +19,7 @@ public class unlockVault : MonoBehaviour
     public GameObject itemKey1;
     public GameObject Player;
     public BoxCollider2D hitBox;
+    public GameObject codes;
 
     void Start()
     {
@@ -27,9 +28,17 @@ public class unlockVault : MonoBehaviour
 
     public void StartGame()
     {
+        Cursor.visible = false;
         gameGrid.SetActive(true);
+        selectedCircleTab.Clear();
+        for (int i = 0; i < circleTab.Length; i++)
+        {
+            circleTab[i].transform.gameObject.tag = "circles";
+            Debug.Log("tag change");
+        }
         numberRange = circleTab.Length;
         GenerateRandomCircles();
+        Debug.Log(selectedCircleTab);
         StartCoroutine(waitForStartGames());
     }
 
@@ -41,6 +50,7 @@ public class unlockVault : MonoBehaviour
             circleTab[i].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
 
         }
+        Cursor.visible = true;
     }
 
 
@@ -52,7 +62,18 @@ public class unlockVault : MonoBehaviour
             randomCircle = Random.Range(1, circleTab.Length - 1);
             if (randomCircle == oldNumber)
             {
-                i--;
+                randomCircle = Random.Range(1, circleTab.Length - 1);
+                if(randomCircle == oldNumber)
+                {
+                    i = i - 1;
+                }
+                else
+                {
+                    circleTab[randomCircle - 1].transform.gameObject.tag = "selectedCricles";
+                    circleTab[randomCircle - 1].gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+                    selectedCircleTab.Add(circleTab[randomCircle - 1]);
+                    oldNumber = randomCircle;
+                }
             }
             else
             {
@@ -103,7 +124,6 @@ public class unlockVault : MonoBehaviour
                 {
                     gameGrid.SetActive(false);
                     FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
-                    Player.SetActive(true);
                     StartGame();
                 }
 
