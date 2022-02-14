@@ -16,11 +16,12 @@ public class Puzzle : MonoBehaviour
     public Sprite[] sprites;
     public numberBox oldSprite;
     private numberBox newSprite;
-    [Header("Camera Settings")]
+    [Header("Close Game Section")]
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject GameGrid;
     [SerializeField] private GameObject Xbtn;
     [SerializeField] private GameObject Key;
+    [SerializeField] private BoxCollider2D hitbox;
 
 
 
@@ -173,6 +174,7 @@ public class Puzzle : MonoBehaviour
         Key.SetActive(true);
         GameGrid.SetActive(false);
         Xbtn.SetActive(false);
+        Destroy(hitbox);
         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
 
     }
