@@ -34,11 +34,9 @@ public class unlockVault : MonoBehaviour
         for (int i = 0; i < circleTab.Length; i++)
         {
             circleTab[i].transform.gameObject.tag = "circles";
-            Debug.Log("tag change");
         }
         numberRange = circleTab.Length;
         GenerateRandomCircles();
-        Debug.Log(selectedCircleTab);
         StartCoroutine(waitForStartGames());
     }
 
