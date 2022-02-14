@@ -31,7 +31,7 @@ public class Puzzle : MonoBehaviour
     void Init()
     {
         int n = 0;
-        for(int y = 2; y >= 0; y--) //pt a remonter a 3
+        for(int y = 2; y >= 0; y--)
         for(int x = 0; x < 3; x++)
             {
                 numberBox box = Instantiate(boxPrefab, parent.transform);
