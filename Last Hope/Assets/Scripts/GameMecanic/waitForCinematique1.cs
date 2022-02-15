@@ -16,7 +16,7 @@ public class waitForCinematique1 : MonoBehaviour
 
     IEnumerator waitForVideoToEnd()
     {
-        yield return new WaitForSeconds(98);
+        yield return new WaitForSeconds(89);
         Loader.Load(Loader.Scene.Game_Level1);
     }
 }
