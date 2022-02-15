@@ -13,6 +13,9 @@ public class LvlChoiceManager : MonoBehaviour
 
     public int levelUnlock;
 
+
+    public GameObject level2Btn;
+
     public Image canvasBG;
     public Sprite lvl1Unlock;
     public Sprite lvl2Unlock;
@@ -48,6 +51,7 @@ public class LvlChoiceManager : MonoBehaviour
                 break;
             case 2:
                 canvasBG.sprite = lvl2Unlock;
+                level2Btn.SetActive(true);
                 break;
             case 3:
                 canvasBG.sprite = lvl3Unlock;
