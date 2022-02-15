@@ -9,4 +9,14 @@ public class LvlChoice : MonoBehaviour
     {
         Loader.Load(Loader.Scene.CinematiqueLVL1);
     }
+
+    public void GoToLvl2()
+    {
+       // Loader.Load(Loader.Scene.CinematiqueLVL2);
+    }
+
+    public void goToLvl3()
+    {
+     //   Loader.Load(Loader.Scene.CinematiqueLVL3);
+    }
 }
