@@ -10,8 +10,10 @@ public class LevelsManager : MonoBehaviour
     public bool key1Good;
     public bool key2Good;
     public bool key3Good;
+    public bool key4Good;
+    public bool key5Good;
+    public bool key6Good;
     public Image gameobject;
-    public int lvl=0;
     private int levelUnlock;
 
     public void Update()
@@ -22,26 +24,20 @@ public class LevelsManager : MonoBehaviour
             key1Good = false;
             key2Good = false;
             key3Good = false;
-            switch (lvl)
-            {
-                case 0:
-                    Debug.Log("cinematique1");
-                    levelUnlock = 2;
-                    PlayerPrefs.SetFloat("levelProgress", levelUnlock);
-                    lvl = 1;
-                    //code qui sauvegarde le playerpref des niveau debloquer avec le save & le load
-                    break;
-                case 1:
-                    Debug.Log("cinematique2");
-                    levelUnlock = 3;
-                    PlayerPrefs.SetFloat("levelProgress", levelUnlock);
-                    lvl = 2;
-                    break;
-                case 2:
-                    Debug.Log("cinematique3");
-                    break;
-            }
+            Debug.Log("cinematique1");
+            levelUnlock = 2;
+            PlayerPrefs.SetFloat("levelProgress", levelUnlock);
             Loader.Load(Loader.Scene.TempSceneAfterLevel1);
+        }
+        if(key4Good && key5Good && key6Good)
+        {
+            Debug.Log("win2");
+            key4Good = false;
+            key5Good = false;
+            key6Good = false;
+            Debug.Log("cinematique2");
+            levelUnlock = 3;
+            PlayerPrefs.SetFloat("levelProgress", levelUnlock);
         }
     }
 }
