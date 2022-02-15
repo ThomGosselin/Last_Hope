@@ -13,6 +13,7 @@ public class unlock : MonoBehaviour
     public GameObject Xbtn;
     public GameObject Player;
     public GameObject UsbKey;
+    public BoxCollider2D ComputerHitBox;
 
     // Start is called before the first frame update
     void Start()
@@ -105,6 +106,7 @@ public class unlock : MonoBehaviour
         if (userInputCode == Code)
         {
             Debug.Log("got it");
+            ComputerHitBox.isTrigger = true;
             closeGame();
         }
         else

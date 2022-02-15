@@ -41,6 +41,7 @@ public class launchImg : MonoBehaviour
                 if (toDestroyHitBox)
                 {
                     Destroy(hitbox);
+                    
                 }
             }
         }

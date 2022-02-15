@@ -8222,6 +8222,7 @@ MonoBehaviour:
   Xbtn: {fileID: 984563054}
   Player: {fileID: 249196742}
   UsbKey: {fileID: 1955083909}
+  ComputerHitBox: {fileID: 1172100807}
 --- !u!1 &512588968
 GameObject:
   m_ObjectHideFlags: 0
@@ -10099,7 +10100,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3673446464866942000, guid: 4cb3e318b23ada14e8ab42ddd071d5aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10710,7 +10711,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1548813910172796096, guid: 5a065696758b2134aabf8e98359225b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13155,7 +13156,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.067867756, y: -0.8492484}
