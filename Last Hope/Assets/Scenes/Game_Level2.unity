@@ -6956,6 +6956,7 @@ GameObject:
   - component: {fileID: 249196746}
   - component: {fileID: 249196745}
   - component: {fileID: 249196744}
+  - component: {fileID: 249196743}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6963,6 +6964,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &249196743
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249196742}
+  m_Enabled: 1
 --- !u!61 &249196744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26641,7 +26650,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1897127842}
   - component: {fileID: 1897127841}
-  - component: {fileID: 1897127840}
   m_Layer: 0
   m_Name: FollowCam
   m_TagString: Untagged
@@ -26649,14 +26657,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1897127840
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897127839}
-  m_Enabled: 1
 --- !u!114 &1897127841
 MonoBehaviour:
   m_ObjectHideFlags: 0
