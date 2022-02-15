@@ -39,7 +39,7 @@ public class PauseMenu : MonoBehaviour
  
     public void CommandMenu()
     {
-
+        
     }
 
     public void LoadMenu()
