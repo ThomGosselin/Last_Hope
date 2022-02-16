@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Game_Level1.unity
     guid: c3a720d6edff63d4bb9d81cd07f99ae1
   - enabled: 1
-    path: Assets/Scenes/TempSceneAfterLevel1.unity
-    guid: 318a2e8e8fc48bc4b80620c1c24c19ab
+    path: Assets/Scenes/CinematiqueLVL1To2.unity
+    guid: 036eb91336fdd8648920a655200043d7
   - enabled: 1
     path: Assets/Scenes/Game_Level2.unity
     guid: 115b49cc792f5ae4da44c1c6ed792ebf

@@ -27,7 +27,7 @@ public class LevelsManager : MonoBehaviour
             Debug.Log("cinematique1");
             levelUnlock = 2;
             PlayerPrefs.SetInt("levelProgress", levelUnlock);
-            Loader.Load(Loader.Scene.TempSceneAfterLevel1);
+            Loader.Load(Loader.Scene.CinematiqueLVL1To2);
         }
         if(key4Good && key5Good && key6Good)
         {
