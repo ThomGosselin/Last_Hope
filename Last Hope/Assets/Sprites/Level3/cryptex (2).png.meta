@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1fc506d027aa5724eb38c3e5aeea66ef
+guid: 2071e5612fbb4a243b82000dd2d5684b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8250916699469528106
-    second: cryptex (1)_0
+      213: -124425969987734983
+    second: cryptex (2)_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cryptex (1)_0
+      name: cryptex (2)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2c383fd505218270800000000000000
-      internalID: 8250916699469528106
+      spriteID: 9323c025d33f54ef0800000000000000
+      internalID: -124425969987734983
       vertices: []
       indices: 
       edges: []
