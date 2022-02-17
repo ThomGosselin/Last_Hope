@@ -30,7 +30,7 @@ public class Puzzle : MonoBehaviour
     {
         Debug.Log(sprites);
         Init();
-        for (int i = 0; i < 999; i++)
+        for (int i = 0; i < 1000; i++)
         {
             Shuffle();
         }
@@ -63,11 +63,11 @@ public class Puzzle : MonoBehaviour
         var from = boxes[x, y];
         var target = boxes[x + Dx, y + Dy];
 
-        //swap this 2 boxes
+        //échange des deux pieces du puzzle
         boxes[x, y] = target;
         boxes[x + Dx, y + Dy] = from;
 
-        //update pos 2 boxes;
+        //update de la position des pieces du puzzle
         from.UpdatePos(x + Dx, y + Dy);
         target.UpdatePos(x, y);
     }
@@ -111,7 +111,7 @@ public class Puzzle : MonoBehaviour
 
     void Shuffle()
     {
-        for(int i =0; i<3; i++)
+        for(int i =0; i<2; i++)
         {
             for (int j =0; j<3; j++)
             {
