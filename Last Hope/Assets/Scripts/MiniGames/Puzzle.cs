@@ -30,7 +30,7 @@ public class Puzzle : MonoBehaviour
     {
         Debug.Log(sprites);
         Init();
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 999; i++)
         {
             Shuffle();
         }
@@ -40,7 +40,7 @@ public class Puzzle : MonoBehaviour
     {
         int n = 0;
         for(int y = 2; y >= 0; y--)
-        for(int x = 0; x < 3; x++)
+        for(int x = 0; x <= 2; x++)
             {
                 numberBox box = Instantiate(boxPrefab, parent.transform);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
@@ -60,6 +60,10 @@ public class Puzzle : MonoBehaviour
 
     void Swap(int x, int y, int Dx, int Dy)
     {
+        Debug.Log(x);
+        Debug.Log(y);
+        Debug.Log(Dx);
+        Debug.Log(Dy);
         var from = boxes[x, y];
         var target = boxes[x + Dx, y + Dy];
 
@@ -111,7 +115,7 @@ public class Puzzle : MonoBehaviour
 
     void Shuffle()
     {
-        for(int i =0; i<2; i++)
+        for(int i =0; i<3; i++)
         {
             for (int j =0; j<3; j++)
             {
@@ -132,7 +136,7 @@ public class Puzzle : MonoBehaviour
         Vector2 pos = new Vector2();
         do
         {
-            int n = Random.Range(0, 4);
+            int n = Random.Range(0, 3);
             if (n == 0)
                 pos = Vector2.left;
             else if (n == 1)
