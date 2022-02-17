@@ -52,10 +52,7 @@ public class Simon : MonoBehaviour
             
             if (currentLevel == levelsToComplete)
             {
-                gameGrid.SetActive(false);
-                player.SetActive(true);
-                key.SetActive(true);
-                FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+                StartCoroutine(WaitToClose());
             }
             else{
                 StartCoroutine(StartNextRound());
@@ -100,4 +97,18 @@ public class Simon : MonoBehaviour
         buttons.interactable = true;
         yield return null;
     }
+
+    public IEnumerator WaitToClose()
+    {
+        yield return new WaitForSeconds(1.5f);
+        gameGrid.SetActive(false);
+        player.SetActive(true);
+        key.SetActive(true);
+        FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+    }
+
+    
+                
+                
+                
 }

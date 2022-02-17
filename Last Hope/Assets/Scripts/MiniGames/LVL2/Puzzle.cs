@@ -169,7 +169,7 @@ public class Puzzle : MonoBehaviour
 
     public IEnumerator WaitToClose()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         player.SetActive(true);
         Key.SetActive(true);
         GameGrid.SetActive(false);
