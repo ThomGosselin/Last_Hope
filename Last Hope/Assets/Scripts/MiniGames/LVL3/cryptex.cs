@@ -26,6 +26,15 @@ public class cryptex : MonoBehaviour
     public int Index2 = 0;
     public int Index3 = 0;
     public int Index4 = 0;
+    [Header("Section pour le code")]
+    public string code;
+    public string userCode;
+    [Header("Close Game Section")]
+    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject GameGrid;
+    [SerializeField] private GameObject Xbtn;
+    [SerializeField] private GameObject Ingrediant;
+    [SerializeField] private BoxCollider2D hitbox;
 
 
     public void Index1Up()
@@ -36,6 +45,7 @@ public class cryptex : MonoBehaviour
             Index1 = 0;
         }
         Letter1.text = Alphabet[Index1];
+        CheckWin();
     }
 
     public void Index2Up()
@@ -46,6 +56,7 @@ public class cryptex : MonoBehaviour
             Index2 = 0;
         }
         Letter2.text = Alphabet[Index2];
+        CheckWin();
     }
 
     public void Index3Up()
@@ -56,6 +67,7 @@ public class cryptex : MonoBehaviour
             Index3 = 0;
         }
         Letter3.text = Alphabet[Index3];
+        CheckWin();
     }
 
     public void Index4Up()
@@ -66,6 +78,7 @@ public class cryptex : MonoBehaviour
             Index4 = 0;
         }
         Letter4.text = Alphabet[Index4];
+        CheckWin();
     }
     
     public void Index1Down()
@@ -76,6 +89,7 @@ public class cryptex : MonoBehaviour
         }
         Index1 = Index1 - 1;
         Letter1.text = Alphabet[Index1];
+        CheckWin();
     }
     public void Index2Down()
     {
@@ -85,6 +99,7 @@ public class cryptex : MonoBehaviour
         }
         Index2 = Index2 - 1;
         Letter2.text = Alphabet[Index2];
+        CheckWin();
     }
     public void Index3Down()
     {
@@ -94,6 +109,7 @@ public class cryptex : MonoBehaviour
         }
         Index3 = Index3 - 1;
         Letter3.text = Alphabet[Index3];
+        CheckWin();
     }
     public void Index4Down()
     {
@@ -103,6 +119,20 @@ public class cryptex : MonoBehaviour
         }
         Index4 = Index4 - 1;
         Letter4.text = Alphabet[Index4];
+        CheckWin();
     }
 
+    public void CheckWin()
+    {
+        userCode = Letter1.text + Letter2.text + Letter3.text + Letter4.text;
+        if(userCode == code)
+        {
+            player.SetActive(true);
+            Ingrediant.SetActive(true);
+            GameGrid.SetActive(false);
+            Xbtn.SetActive(false);
+            Destroy(hitbox);
+            FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+        }
+    }
 }
