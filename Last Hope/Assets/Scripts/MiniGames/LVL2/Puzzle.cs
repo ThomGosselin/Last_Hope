@@ -60,10 +60,6 @@ public class Puzzle : MonoBehaviour
 
     void Swap(int x, int y, int Dx, int Dy)
     {
-        Debug.Log(x);
-        Debug.Log(y);
-        Debug.Log(Dx);
-        Debug.Log(Dy);
         var from = boxes[x, y];
         var target = boxes[x + Dx, y + Dy];
 
@@ -84,15 +80,11 @@ public class Puzzle : MonoBehaviour
             return 1;
         }
         //is left empty
-        else if (x > 0 && boxes[x - 1, y].isEmpty())
+        if (x > 0 && boxes[x - 1, y].isEmpty())
         {
             return -1;
         }
-        else
-        {
-            return 0;
-        }
-        
+        return 0;
     }
 
     int getDy(int x, int y)
@@ -103,14 +95,11 @@ public class Puzzle : MonoBehaviour
             return 1;
         }
         //is bottom empty
-        else if (y > 0 && boxes[x, y - 1].isEmpty())
+        if (y > 0 && boxes[x, y - 1].isEmpty())
         {
             return -1;
         }
-        else
-        {
-            return 0;
-        }
+        return 0;
     }
 
     void Shuffle()
@@ -136,7 +125,7 @@ public class Puzzle : MonoBehaviour
         Vector2 pos = new Vector2();
         do
         {
-            int n = Random.Range(0, 3);
+            int n = Random.Range(0, 4);
             if (n == 0)
                 pos = Vector2.left;
             else if (n == 1)
@@ -153,7 +142,7 @@ public class Puzzle : MonoBehaviour
 
     bool isValidRange(int n)
     {
-        return n >= 0 && n <= 3;
+        return n >= 0 && n <= 2;
     }
 
     bool isRepeatMove(Vector2 pos)
@@ -174,12 +163,19 @@ public class Puzzle : MonoBehaviour
                 }
             }
         }
+        StartCoroutine(WaitToClose());
+        
+    }
+
+    public IEnumerator WaitToClose()
+    {
+        yield return new WaitForSeconds(3f);
         player.SetActive(true);
         Key.SetActive(true);
         GameGrid.SetActive(false);
         Xbtn.SetActive(false);
         Destroy(hitbox);
         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
-
+        
     }
 }
