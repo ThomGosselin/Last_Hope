@@ -14,6 +14,10 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     {
         keywordActions.Add("dernier espoir", OpenDoorLvl3);
         keywordActions.Add("last hope", OpenDoorLvl3);
+        keywordActions.Add("7", OpenDoorLvl3);
+        keywordActions.Add("5", OpenDoorLvl3);
+        keywordActions.Add("8", OpenDoorLvl3);
+        keywordActions.Add("1", OpenDoorLvl3);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
