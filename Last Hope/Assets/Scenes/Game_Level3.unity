@@ -4188,6 +4188,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234887548}
   m_CullTransparentMesh: 1
+--- !u!1 &259570154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259570155}
+  m_Layer: 0
+  m_Name: xBTn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259570155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259570154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1561571131}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &265063520
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,11 +8549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddcb301f0ff6cc94c804baf52ca2be0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberInputFromUser: {fileID: 0}
-  NumberToFind: 
-  GameGrid: {fileID: 0}
-  Player: {fileID: 0}
-  xBtn: {fileID: 0}
+  NumberInputFromUser: {fileID: 1798440849}
+  NumberToFind: 89
+  GameGrid: {fileID: 550752014}
+  Player: {fileID: 265063520}
+  xBtn: {fileID: 259570154}
 --- !u!1 &1153511862
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,6 +10864,7 @@ Transform:
   - {fileID: 550752015}
   - {fileID: 1141133399}
   - {fileID: 1184588511}
+  - {fileID: 259570155}
   m_Father: {fileID: 2086470540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
