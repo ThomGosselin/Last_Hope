@@ -29,7 +29,7 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
 
     private void OpenDoorLvl3()
     {
-        Debug.Log("Test");
+        
     }
 
 }

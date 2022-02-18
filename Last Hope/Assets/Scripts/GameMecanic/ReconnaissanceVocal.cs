@@ -20,7 +20,7 @@ public class ReconnaissanceVocal : MonoBehaviour
         //Ajout des mots clefs pour la reconnaissance vocal
         keywordActions.Add("la vague", MiniGameLvl1);
         keywordActions.Add("the wave", MiniGameLvl1);
-        
+
 
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
