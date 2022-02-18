@@ -45,6 +45,7 @@ public class cryptex : MonoBehaviour
             Index1 = 0;
         }
         Letter1.text = Alphabet[Index1];
+        FindObjectOfType<AudioManager>().Play("CryptexUp");
         CheckWin();
     }
 
@@ -56,6 +57,7 @@ public class cryptex : MonoBehaviour
             Index2 = 0;
         }
         Letter2.text = Alphabet[Index2];
+        FindObjectOfType<AudioManager>().Play("CryptexUp");
         CheckWin();
     }
 
@@ -67,6 +69,7 @@ public class cryptex : MonoBehaviour
             Index3 = 0;
         }
         Letter3.text = Alphabet[Index3];
+        FindObjectOfType<AudioManager>().Play("CryptexUp");
         CheckWin();
     }
 
@@ -78,6 +81,7 @@ public class cryptex : MonoBehaviour
             Index4 = 0;
         }
         Letter4.text = Alphabet[Index4];
+        FindObjectOfType<AudioManager>().Play("CryptexUp");
         CheckWin();
     }
     
@@ -99,6 +103,7 @@ public class cryptex : MonoBehaviour
         }
         Index2 = Index2 - 1;
         Letter2.text = Alphabet[Index2];
+        FindObjectOfType<AudioManager>().Play("CryptexDown");
         CheckWin();
     }
     public void Index3Down()
@@ -109,6 +114,7 @@ public class cryptex : MonoBehaviour
         }
         Index3 = Index3 - 1;
         Letter3.text = Alphabet[Index3];
+        FindObjectOfType<AudioManager>().Play("CryptexDown");
         CheckWin();
     }
     public void Index4Down()
@@ -119,6 +125,7 @@ public class cryptex : MonoBehaviour
         }
         Index4 = Index4 - 1;
         Letter4.text = Alphabet[Index4];
+        FindObjectOfType<AudioManager>().Play("CryptexDown");
         CheckWin();
     }
 
@@ -136,3 +143,5 @@ public class cryptex : MonoBehaviour
         }
     }
 }
+
+  
