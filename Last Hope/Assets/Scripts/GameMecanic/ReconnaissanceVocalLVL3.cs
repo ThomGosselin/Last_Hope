@@ -5,40 +5,31 @@ using UnityEngine;
 using UnityEngine.Windows.Speech;
 using System.Linq;
 
-public class ReconnaissanceVocal : MonoBehaviour
+public class ReconnaissanceVocalLVL3 : MonoBehaviour
 {
 
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
-
-    public GameObject peinture;
-    public GameObject player;
-    public GameObject key3;
-    // Start is called before the first frame update
     void Start()
     {
-        //Ajout des mots clefs pour la reconnaissance vocal
-        keywordActions.Add("la vague", MiniGameLvl1);
-        keywordActions.Add("the wave", MiniGameLvl1);
-        
-
+        keywordActions.Add("dernier espoir", OpenDoorLvl3);
+        keywordActions.Add("last hope", OpenDoorLvl3);
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
         keywordRecognizer.Start();
     }
 
+
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
     {
         keywordActions[args.text].Invoke();
     }
 
-    private void MiniGameLvl1()
+
+    private void OpenDoorLvl3()
     {
-        key3.SetActive(true);
-        player.SetActive(true);
-        peinture.SetActive(false);
+        Debug.Log("Test");
     }
-   
 
 }
