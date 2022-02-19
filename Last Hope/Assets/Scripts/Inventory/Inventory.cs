@@ -24,6 +24,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        objectToPickup = false;
+    }
+
     private void Start()
     {
         inventorySpaces = invUI.GetComponentsInChildren<Image>();
@@ -62,6 +67,9 @@ public class Inventory : MonoBehaviour
                             break;
                         case "Key6":
                             FindObjectOfType<LevelsManager>().key6Good = true;
+                            break;
+                        case "HiddenBatterys":
+                            FindObjectOfType<SwapRecorder>().Swap_Recorder();
                             break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
