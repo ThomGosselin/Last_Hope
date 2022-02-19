@@ -47,7 +47,6 @@ public class Inventory : MonoBehaviour
                 else
                 {
                     objets.SetActive(false);
-                    Debug.Log(objets.name);
                     switch (objets.name)
                     {
                         case "Key1":

@@ -27,7 +27,6 @@ public class CorrectNumberGame : MonoBehaviour
             Player.SetActive(true);
             xBtn.SetActive(false);
             Ingrediant.SetActive(true);
-
         }
     }
 
