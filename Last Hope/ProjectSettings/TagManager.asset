@@ -17,6 +17,7 @@ TagManager:
   - bouton
   - icnWord
   - icnCamera
+  - PlayBtn
   layers:
   - Default
   - TransparentFX

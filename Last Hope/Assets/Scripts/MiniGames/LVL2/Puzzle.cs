@@ -30,7 +30,7 @@ public class Puzzle : MonoBehaviour
     {
         Debug.Log(sprites);
         Init();
-        for (int i = 0; i < 999; i++)
+        for (int i = 0; i < 200; i++)
         {
             Shuffle();
         }
