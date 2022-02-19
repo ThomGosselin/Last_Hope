@@ -13,6 +13,8 @@ public class CorrectNumberGame : MonoBehaviour
     public GameObject GameGrid;
     public GameObject Player;
     public GameObject xBtn;
+    public GameObject Canvas;
+    public GameObject Ingrediant;
 
 
     private void Update()
@@ -21,8 +23,11 @@ public class CorrectNumberGame : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             GameGrid.SetActive(false);
+            Canvas.SetActive(false);
             Player.SetActive(true);
-            xBtn.SetActive(true);
+            xBtn.SetActive(false);
+            Ingrediant.SetActive(true);
+
         }
     }
 
