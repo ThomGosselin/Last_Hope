@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 95f2e3ec5cd35d1419d8ee2356b15aed
+guid: eebd9944917e6214c901e125846c5115
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 88531796727621230
-    second: tablecontrole_0
+      213: 8162910054044640527
+    second: porte_pi_0
   - first:
-      213: 6173632799221306714
-    second: tablecontrole_1
-  - first:
-      213: 6403909780314628474
-    second: tablecontrole_2
-  - first:
-      213: 8763789178271608080
-    second: tablecontrole_3
+      213: 8703258009606042649
+    second: porte_pi_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,28 +93,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tablecontrole_0
+      name: porte_pi_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 16
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -129,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66e64733378a3100800000000000000
-      internalID: 88531796727621230
+      spriteID: f05abc8f17b784170800000000000000
+      internalID: 8162910054044640527
       vertices: []
       indices: 
       edges: []
