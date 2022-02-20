@@ -10,6 +10,8 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     [Header("Éléments pour la reconnaissance vocal")]
     private Dictionary<string, Action> keywordActions = new Dictionary<string, Action>();
     private KeywordRecognizer keywordRecognizer;
+    [Header("Éléments de l'enigme 2")]
+    public GameObject secretDoor;
     [Header("Éléments de l'enigme 3")]
     public string VoiceMailPassword;
     public string UserVoiceMailPassWord;
@@ -41,7 +43,7 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
 
     private void OpenDoorLvl3()
     {
-        //code de deplacement de la porte
+        secretDoor.transform.position = new Vector3(-1.01F, 3.1f, -100f);
     }
 
     private void AddToVoiceMailPassword7()
