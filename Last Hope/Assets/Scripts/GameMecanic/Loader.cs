@@ -19,6 +19,8 @@ public static class Loader
         CinematiqueLVL1,
         Game_Level2,
         CinematiqueLVL1To2,
+        CinematiqueLvl2To3,
+        Game_Level3,
     }
 
     private static Action onLoaderCallback;

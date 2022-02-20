@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game_Level2.unity
     guid: 115b49cc792f5ae4da44c1c6ed792ebf
+  - enabled: 1
+    path: Assets/Scenes/CinemativeLvl2To3.unity
+    guid: e5fa4dd1b5f014e4584e5b4916ef6d40
+  - enabled: 1
+    path: Assets/Scenes/Game_Level3.unity
+    guid: 695bcd8bce26fd94fb0583b73b8a742f
   m_configObjects: {}
