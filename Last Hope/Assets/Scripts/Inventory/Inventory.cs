@@ -70,6 +70,15 @@ public class Inventory : MonoBehaviour
                         case "HiddenBatterys":
                             FindObjectOfType<SwapRecorder>().Swap_Recorder();
                             break;
+                        case "Ingrediant1":
+                            FindObjectOfType<LevelsManager>().Ingrediant1Good = true;
+                            break;
+                        case "Ingrediant2":
+                            FindObjectOfType<LevelsManager>().Ingrediant2Good = true;
+                            break;
+                        case "Ingrediant3":
+                            FindObjectOfType<LevelsManager>().Ingrediant3Good = true;
+                            break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();

@@ -13,6 +13,9 @@ public class LevelsManager : MonoBehaviour
     public bool key4Good;
     public bool key5Good;
     public bool key6Good;
+    public bool Ingrediant1Good;
+    public bool Ingrediant2Good;
+    public bool Ingrediant3Good;
     public Image gameobject;
     private int levelUnlock;
 
