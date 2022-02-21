@@ -41,7 +41,7 @@ public class LevelsManager : MonoBehaviour
             Debug.Log("cinematique2");
             levelUnlock = 3;
             PlayerPrefs.SetInt("levelProgress", levelUnlock);
-            Loader.Load(Loader.Scene.CinematiqueLvl2To3);
+            Loader.Load(Loader.Scene.CinemativeLvl2To3);
         }
     }
 }
