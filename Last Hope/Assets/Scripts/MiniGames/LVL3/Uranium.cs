@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Map : MonoBehaviour
+public class Uranium : MonoBehaviour
 {
-    public GameObject BigMap;
     public GameObject Etagere;
     public GameObject xBtn;
+    public GameObject Player;
+    public GameObject Ingrediant;
 
 
     // Update is called once per frame
@@ -25,8 +26,10 @@ public class Map : MonoBehaviour
             }
             if (hit.collider.CompareTag("ClickMap"))
             {
-                BigMap.SetActive(false);
-                Etagere.SetActive(true);
+                Etagere.SetActive(false);
+                Player.SetActive(true);
+                xBtn.SetActive(false);
+                Ingrediant.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
 
             }

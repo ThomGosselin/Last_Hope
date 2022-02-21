@@ -109,7 +109,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChaiseBureau_0
+      name: ContourMurNiv2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0265a53dad4b77eb0800000000000000
+      internalID: -4722106832332892640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b986fd7e7f99a9b60800000000000000
+      internalID: 7753678998497880219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68686e8f662c68740800000000000000
+      internalID: 5154020571090421382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_3
       rect:
         serializedVersion: 2
         x: 0
@@ -127,14 +190,56 @@ TextureImporter:
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: b925cc4542d4f3250800000000000000
-      internalID: 5926540453079700123
+      spriteID: 3fe54e59bfd249c20800000000000000
+      internalID: 3212242992796819187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChaiseBureau_1
+      name: ContourMurNiv2_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae63920440bf0af0800000000000000
+      internalID: -427929633429426518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0089123138d39e0800000000000000
+      internalID: -1640010571101765444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_6
       rect:
         serializedVersion: 2
         x: 0
@@ -146,14 +251,62 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -4, y: 1}
-        - {x: -8, y: 8}
+      - - {x: -8, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: 7}
+        - {x: -8, y: 7}
+      - - {x: -8, y: 7}
+        - {x: -4, y: 1}
+        - {x: 5, y: 1}
+        - {x: 8, y: 7}
         - {x: 8, y: 8}
-        - {x: 4, y: 1}
+        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: a3948e2d62966d590800000000000000
-      internalID: -7649811301574096582
+      spriteID: 174e3b1e12fcaa230800000000000000
+      internalID: 3650958192364741745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2332c0a71c1aa21f0800000000000000
+      internalID: -1068864109198695630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ContourMurNiv2_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffed82760347cad0800000000000000
+      internalID: -2682101358105071631
       vertices: []
       indices: 
       edges: []

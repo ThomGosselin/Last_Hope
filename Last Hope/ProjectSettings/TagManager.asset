@@ -19,6 +19,7 @@ TagManager:
   - icnCamera
   - PlayBtn
   - clickMap
+  - IngrediantClick
   layers:
   - Default
   - TransparentFX
