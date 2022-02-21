@@ -80,6 +80,7 @@ public class Inventory : MonoBehaviour
                             FindObjectOfType<LevelsManager>().Ingrediant3Good = true;
                             break;
                         case "PaperToFind":
+                            FindObjectOfType<SwapWallNumber>().Swap_Wall();
                             break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
