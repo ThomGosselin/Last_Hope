@@ -36,7 +36,6 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
 
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
     {
-        Debug.Log("Test");
         keywordActions[args.text].Invoke();
     }
 
