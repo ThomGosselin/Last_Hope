@@ -79,6 +79,8 @@ public class Inventory : MonoBehaviour
                         case "Ingrediant3":
                             FindObjectOfType<LevelsManager>().Ingrediant3Good = true;
                             break;
+                        case "PaperToFind":
+                            break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
