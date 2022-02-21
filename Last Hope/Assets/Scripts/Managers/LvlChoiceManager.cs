@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,7 +45,6 @@ public class LvlChoiceManager : MonoBehaviour
     private void Load()
     {
         levelUnlock = PlayerPrefs.GetInt("levelProgress");
-        Debug.Log(levelUnlock);
         switch (levelUnlock)
         {
             case 1:
