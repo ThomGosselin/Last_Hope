@@ -53,13 +53,19 @@ public class GlowObject : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        _isGlowing = true;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _isGlowing = true;
+        }
     }
 
-    private void OnTriggerExit2D()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        _isGlowing = false;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _isGlowing = false;
+        }
     }
 }
