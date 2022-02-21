@@ -49,50 +49,37 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     private void AddToVoiceMailPassword7()
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "7";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         if (lenghtOfCurrentTry == CurrentPasswordLenght)
         {
             checkPassWord();
-        }
-        else
-        {
-            lenghtOfCurrentTry = lenghtOfCurrentTry + 1;  
-        }
-       
+        }   
     }
     private void AddToVoiceMailPassword5()
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "5";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         if (lenghtOfCurrentTry == CurrentPasswordLenght)
         {
             checkPassWord();
-        }
-        else
-        {
-            lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         }
     }
     private void AddToVoiceMailPassword8()
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "8";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         if (lenghtOfCurrentTry == CurrentPasswordLenght)
         {
             checkPassWord();
-        }
-        else
-        {
-            lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         }
     }
     private void AddToVoiceMailPassword1()
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "1";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         if (lenghtOfCurrentTry == CurrentPasswordLenght)
         {
             checkPassWord();
-        }
-        else
-        {
-            lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
         }
     }
 
@@ -100,7 +87,11 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     {
         if (UserVoiceMailPassWord == VoiceMailPassword)
         {
-            //code pour ce la suite de l'enigme
+            FindObjectOfType<Phone>().ReadMessage();
+        }
+        else
+        {
+            //wrong password
         }
     }
 }
