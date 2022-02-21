@@ -4885,7 +4885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592662900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.080001, y: 4.69, z: -10}
+  m_LocalPosition: {x: -9.500001, y: 4.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670943166}
@@ -5395,7 +5395,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
   m_MaxChunkCount: 16
@@ -11466,7 +11466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285067410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.080001, y: 4.69, z: -10}
+  m_LocalPosition: {x: -9.500001, y: 4.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13588,6 +13588,7 @@ MonoBehaviour:
   lvl3Complete: 0
   levelUnlock: 0
   level2Btn: {fileID: 0}
+  level3Btn: {fileID: 0}
   canvasBG: {fileID: 396541077}
   lvl1Unlock: {fileID: 21300000, guid: 72cc1b6569e1ce64a9b7aa3cfb843165, type: 3}
   lvl2Unlock: {fileID: 21300000, guid: 72cc1b6569e1ce64a9b7aa3cfb843165, type: 3}
@@ -15096,7 +15097,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7654417244826114326, guid: 2ccba7d4223f57f4697679b286a9b0d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15116,7 +15117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886971559}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.08, y: 4.69, z: 0}
+  m_LocalPosition: {x: -9.5, y: 4.7, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15171,7 +15172,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02404426, y: -0.16662103}
+  m_Offset: {x: 0.02404426, y: -0.15257394}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15182,7 +15183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16524234, y: 0.07432817}
+  m_Size: {x: 0.16524234, y: 0.10242236}
   m_EdgeRadius: 0
 --- !u!95 &1886971565
 Animator:
@@ -15669,7 +15670,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6980830589498039368, guid: b1c7ebf4281b50b4092a77accebd77b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
