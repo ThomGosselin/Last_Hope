@@ -119,47 +119,22 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: -8}
+      - - {x: -8, y: -16}
+        - {x: -8, y: -10}
+        - {x: 8, y: -10}
+        - {x: 8, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: 9925c87d61f65f360800000000000000
       internalID: 7202785322945237657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lampe_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -3}
-        - {x: 8, y: -3}
-        - {x: 8, y: -8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b77a2bf8c43941f0800000000000000
-      internalID: -1060258199457073225
       vertices: []
       indices: 
       edges: []
