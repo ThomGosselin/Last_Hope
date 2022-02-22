@@ -9969,8 +9969,8 @@ RectTransform:
   - {fileID: 2075483149}
   - {fileID: 1788709475}
   - {fileID: 1059030626}
-  - {fileID: 1573807853}
   - {fileID: 1286880375}
+  - {fileID: 1573807853}
   - {fileID: 1100169517}
   - {fileID: 753496139}
   - {fileID: 1119856498}
@@ -10490,7 +10490,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1573807854}
         m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
         m_MethodName: SetResolution
         m_Mode: 0
@@ -11623,7 +11623,7 @@ RectTransform:
   m_Children:
   - {fileID: 317370585}
   m_Father: {fileID: 1062781348}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11677,10 +11677,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1573807854}
         m_TargetAssemblyTypeName: OptionsMenu, Assembly-CSharp
         m_MethodName: SetFullScreen
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13976,7 +13976,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573807852}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13984,11 +13984,11 @@ RectTransform:
   - {fileID: 1808820602}
   - {fileID: 1335912915}
   m_Father: {fileID: 1062781348}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 277, y: 0.000011444}
+  m_AnchoredPosition: {x: 277, y: 0}
   m_SizeDelta: {x: 401.736, y: 112.1202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573807854
