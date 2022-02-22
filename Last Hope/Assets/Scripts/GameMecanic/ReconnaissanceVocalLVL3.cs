@@ -90,7 +90,9 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
         }
         else
         {
-            //wrong password
+            lenghtOfCurrentTry = 0;
+            UserVoiceMailPassWord = "";
+            FindObjectOfType<AudioManager>().Play("PhoneError");
         }
     }
 }
