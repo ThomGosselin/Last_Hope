@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 072d94a6f2e009d40996bf7f0dc8c7e1
+guid: adf32c0ca48b7c84586dfe4523b45a5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9074309461830776310
-    second: PetitLecteurCasette_0
+      213: -5819884550413025331
+    second: tiroirBureau1_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,35 +90,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 4096
-    resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PetitLecteurCasette_0
+      name: tiroirBureau1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -132,8 +108,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f5b366b06c6eed70800000000000000
-      internalID: 9074309461830776310
+      spriteID: dcff8d226dd9b3fa0800000000000000
+      internalID: -5819884550413025331
       vertices: []
       indices: 
       edges: []
