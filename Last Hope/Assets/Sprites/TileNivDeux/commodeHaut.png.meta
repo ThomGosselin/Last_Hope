@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 21393e129173a794dab520b2ea662a14
+guid: c87932a90a92a2b4a9ee4b16c53138ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -966857789962058679
-    second: GrandeBiblio_0
+      213: -616475629814734421
+    second: commodeHaut_0
+  - first:
+      213: 2100226621361873880
+    second: commodeHaut_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,26 +93,59 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrandeBiblio_0
+      name: commodeHaut_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9440ef076f70592f0800000000000000
-      internalID: -966857789962058679
+      spriteID: ba125305ea6d177f0800000000000000
+      internalID: -616475629814734421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: commodeHaut_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3e7121cf0852d10800000000000000
+      internalID: 2100226621361873880
       vertices: []
       indices: 
       edges: []

@@ -1,34 +1,43 @@
 fileFormatVersion: 2
-guid: b80cb5dd999ee6643a365d33fd79d874
+guid: 45e63a5a7d6b93549a613de15d541d0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7384172764945185884
-    second: Contour3_0
+      213: 711441954714407433
+    second: solLabo_0
   - first:
-      213: -5242976293971256229
-    second: Contour3_1
+      213: 8947045475884579356
+    second: solLabo_1
   - first:
-      213: -2252993080606555294
-    second: Contour3_2
+      213: -2534988672759512700
+    second: solLabo_2
   - first:
-      213: 7534811122940155267
-    second: Contour3_3
+      213: -900352123081947092
+    second: solLabo_3
   - first:
-      213: -1815641908935526601
-    second: Contour3_4
+      213: 181537223435754436
+    second: solLabo_4
   - first:
-      213: -7529536758506049054
-    second: Contour3_5
+      213: 2516909023088706813
+    second: solLabo_5
   - first:
-      213: 4807909589023988626
-    second: Contour3_6
+      213: -1910224549630425652
+    second: solLabo_6
   - first:
-      213: 3700979094088783485
-    second: Contour3_7
+      213: 8152024003948748551
+    second: solLabo_7
   - first:
-      213: 2638522973460204271
-    second: Contour3_8
+      213: 6475563230177643933
+    second: solLabo_8
+  - first:
+      213: -2571650969419523701
+    second: solLabo_9
+  - first:
+      213: -2008002946797134151
+    second: solLabo_10
+  - first:
+      213: 7786954948501705911
+    second: solLabo_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +139,70 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Contour3_0
+      name: solLabo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902df0d30bc8fd900800000000000000
+      internalID: 711441954714407433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solLabo_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1abd53f47a4a2c70800000000000000
+      internalID: 8947045475884579356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solLabo_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481c78aab39e1dcd0800000000000000
+      internalID: -2534988672759512700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solLabo_3
       rect:
         serializedVersion: 2
         x: 0
@@ -138,20 +210,24 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: -1, y: 8}
+        - {x: -1, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: c5cfba6b10ad97660800000000000000
-      internalID: 7384172764945185884
+      spriteID: c288eeaa38e4183f0800000000000000
+      internalID: -900352123081947092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_1
+      name: solLabo_4
       rect:
         serializedVersion: 2
         x: 16
@@ -159,20 +235,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c9c00d6d43d37b0800000000000000
-      internalID: -5242976293971256229
+      spriteID: 4cb16649423f48200800000000000000
+      internalID: 181537223435754436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_2
+      name: solLabo_5
       rect:
         serializedVersion: 2
         x: 32
@@ -180,20 +256,24 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 1, y: -8}
+        - {x: 1, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 2638805eab2cbb0e0800000000000000
-      internalID: -2252993080606555294
+      spriteID: df48d2ddb6bdde220800000000000000
+      internalID: 2516909023088706813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_3
+      name: solLabo_6
       rect:
         serializedVersion: 2
         x: 0
@@ -201,20 +281,24 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: -1, y: 8}
+        - {x: -1, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 38592809bc6019860800000000000000
-      internalID: 7534811122940155267
+      spriteID: cc54c0694e48d75e0800000000000000
+      internalID: -1910224549630425652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_4
+      name: solLabo_7
       rect:
         serializedVersion: 2
         x: 16
@@ -222,20 +306,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 737f592bd4b8dc6e0800000000000000
-      internalID: -1815641908935526601
+      spriteID: 70f92dbe3aec12170800000000000000
+      internalID: 8152024003948748551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_5
+      name: solLabo_8
       rect:
         serializedVersion: 2
         x: 32
@@ -243,20 +327,28 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 1, y: -8}
+        - {x: 1, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      - - {x: 1, y: 8}
+        - {x: 1, y: 8}
+        - {x: 1, y: 8}
+        - {x: 1, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1300a1636b18790800000000000000
-      internalID: -7529536758506049054
+      spriteID: d9dc157e272ddd950800000000000000
+      internalID: 6475563230177643933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_6
+      name: solLabo_9
       rect:
         serializedVersion: 2
         x: 0
@@ -264,20 +356,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29b18fd3c4029b240800000000000000
-      internalID: 4807909589023988626
+      spriteID: b89d5798119af4cd0800000000000000
+      internalID: -2571650969419523701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_7
+      name: solLabo_10
       rect:
         serializedVersion: 2
         x: 16
@@ -285,20 +377,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d761f40a0e48c5330800000000000000
-      internalID: 3700979094088783485
+      spriteID: 9be183075f32224e0800000000000000
+      internalID: -2008002946797134151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Contour3_8
+      name: solLabo_11
       rect:
         serializedVersion: 2
         x: 32
@@ -306,14 +398,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fea8dc43aaaed9420800000000000000
-      internalID: 2638522973460204271
+      spriteID: 7b41a63c442d01c60800000000000000
+      internalID: 7786954948501705911
       vertices: []
       indices: 
       edges: []
