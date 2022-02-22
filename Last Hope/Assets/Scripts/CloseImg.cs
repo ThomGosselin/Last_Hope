@@ -25,6 +25,10 @@ public class CloseImg : MonoBehaviour
                 xBtn.SetActive(false);
                 player.SetActive(true);
             }
+            else
+            {
+                return;
+            }
         }
 
     }

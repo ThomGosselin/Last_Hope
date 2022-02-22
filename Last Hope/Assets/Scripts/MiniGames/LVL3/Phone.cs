@@ -12,12 +12,6 @@ public class Phone : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("CodeBoiteVocal");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ReadMessage()
     {
         FindObjectOfType<AudioManager>().Play("MessageBoiteVocal");

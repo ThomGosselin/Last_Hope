@@ -20,7 +20,6 @@ public class Map : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (!hit)
             {
-                FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
                 return;
             }
             if (hit.collider.CompareTag("ClickMap"))
@@ -28,7 +27,6 @@ public class Map : MonoBehaviour
                 BigMap.SetActive(false);
                 Etagere.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
-
             }
         }
     }
