@@ -23,11 +23,26 @@ public class unlockCadenas : MonoBehaviour
     void Update()
     {
         userPassword = chiffre1.text + chiffre2.text + chiffre3.text + chiffre4.text;
-        if(userPassword == passcode)
+        if(chiffre1.text !="" && chiffre2.text!="" && chiffre3.text !="" && chiffre4.text != "")
+        {
+            checkWin();
+        }
+    }
+
+    void checkWin()
+    {
+        if (userPassword == passcode)
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             cadenasGame.SetActive(false);
             tiroir.SetActive(true);
+        }
+        if (userPassword != passcode)
+        {
+            chiffre1.text = "";
+            chiffre2.text = "";
+            chiffre3.text = "";
+            chiffre4.text = "";
         }
     }
 }
