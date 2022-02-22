@@ -27,6 +27,9 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
         keywordActions.Add("5", AddToVoiceMailPassword5);
         keywordActions.Add("8", AddToVoiceMailPassword8);
         keywordActions.Add("1", AddToVoiceMailPassword1);
+        keywordActions.Add("8 1", AddToVoiceMailPassword8);
+        keywordActions.Add("7 5", AddToVoiceMailPassword75);
+
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -54,6 +57,15 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
             checkPassWord();
         }   
     }
+    private void AddToVoiceMailPassword75()
+    {
+        UserVoiceMailPassWord = UserVoiceMailPassWord + "75";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 2;
+        if (lenghtOfCurrentTry == CurrentPasswordLenght)
+        {
+            checkPassWord();
+        }
+    }
     private void AddToVoiceMailPassword5()
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "5";
@@ -76,6 +88,15 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     {
         UserVoiceMailPassWord = UserVoiceMailPassWord + "1";
         lenghtOfCurrentTry = lenghtOfCurrentTry + 1;
+        if (lenghtOfCurrentTry == CurrentPasswordLenght)
+        {
+            checkPassWord();
+        }
+    }
+    private void AddToVoiceMailPassword81()
+    {
+        UserVoiceMailPassWord = UserVoiceMailPassWord + "81";
+        lenghtOfCurrentTry = lenghtOfCurrentTry + 2;
         if (lenghtOfCurrentTry == CurrentPasswordLenght)
         {
             checkPassWord();
