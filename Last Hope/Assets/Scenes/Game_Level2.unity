@@ -8187,7 +8187,7 @@ MonoBehaviour:
   - {fileID: 287322200}
   - {fileID: 35528804}
   - {fileID: 512588970}
-  levelsToComplete: 2
+  levelsToComplete: 4
   currentLevel: 0
   audioSource: {fileID: 1693230416}
   buttons: {fileID: 310187375}
@@ -8393,6 +8393,7 @@ MonoBehaviour:
   Player: {fileID: 249196742}
   UsbKey: {fileID: 1955083909}
   ComputerHitBox: {fileID: 1172100807}
+  CadenasBox: {fileID: 866274778}
 --- !u!1 &512588968
 GameObject:
   m_ObjectHideFlags: 0

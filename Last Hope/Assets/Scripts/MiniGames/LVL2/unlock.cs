@@ -14,6 +14,7 @@ public class unlock : MonoBehaviour
     public GameObject Player;
     public GameObject UsbKey;
     public BoxCollider2D ComputerHitBox;
+    public BoxCollider2D CadenasBox;
 
     // Start is called before the first frame update
     void Start()
@@ -91,6 +92,7 @@ public class unlock : MonoBehaviour
         gameGrid.SetActive(false);
         Xbtn.SetActive(false);
         UsbKey.SetActive(true);
+        CadenasBox.isTrigger = false;
         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
     }
 
