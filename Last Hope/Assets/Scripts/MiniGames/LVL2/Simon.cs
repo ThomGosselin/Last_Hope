@@ -64,6 +64,7 @@ public class Simon : MonoBehaviour
 
     public void StartGame()
     {
+        currentLevel = 0;
         StartCoroutine(StartNextRound());
         startButton.SetActive(false);
     }
