@@ -19,6 +19,10 @@ public class PlayRecorder : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("Morse");
 
             }
+            else
+            {
+                return;
+            }
         }
     }
 }

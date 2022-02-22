@@ -30,6 +30,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUi.SetActive(false);
         GameIsPaused = false;
         Player.SetActive(true);
+        ClosePause();
     }
 
     void Pause()
@@ -54,5 +55,10 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private void ClosePause()
+    {
+        FindObjectOfType<AudioManager>().Pause("Pause");
     }
 }

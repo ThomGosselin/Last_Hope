@@ -20,11 +20,6 @@ public class FindTheObject : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
 
-            if (!hit)
-            {
-                FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
-                return;
-            }
             if (hit.collider.CompareTag("ItemToFind"))
             {
                 GameGrid.SetActive(false);
@@ -33,6 +28,10 @@ public class FindTheObject : MonoBehaviour
                 itemKey1.SetActive(true);
                 Destroy(hitBox);
                 Destroy(hitBox2);
+            }
+            else
+            {
+                return;
             }
         }
         
