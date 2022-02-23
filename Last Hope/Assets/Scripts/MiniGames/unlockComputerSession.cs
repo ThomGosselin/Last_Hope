@@ -31,7 +31,7 @@ public class unlockComputerSession : MonoBehaviour
 
     private void checkWin()
     {
-        if (userPassword == passcode)
+        if (userInput.text == passcode)
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             currentcomptuerScreen.SetActive(false);
