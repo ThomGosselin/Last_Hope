@@ -5,24 +5,33 @@ using UnityEngine.UI;
 
 public class CountDown : MonoBehaviour
 {
-    [SerializeField] Text timeText;
-    [SerializeField] Image backgroundTimer;
-    [SerializeField] float duration, currentTime;
-    void Start()
+    public float timeValue;
+    public Text timeText;
+
+    private void Update()
     {
-        currentTime = duration;
-        timeText.text = currentTime.ToString();
-        StartCoroutine(TimeIEn());
+        if(timeValue > 0)
+        {
+            timeValue -= Time.deltaTime;
+        }
+        else
+        {
+            timeValue = 0;
+        }
+        DisplayTime(timeValue);
     }
 
-    IEnumerator TimeIEn()
+    void DisplayTime(float timeToDisplay)
     {
-        while(currentTime > 0)
+        if(timeToDisplay < 0)
         {
-            timeText.text = currentTime.ToString();
-            yield return new WaitForSeconds(1f);
-            currentTime--;
+            timeToDisplay = 0;
         }
-        
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timeText.text = string.Format("{0:00}:{01:00}", minutes, seconds);
     }
+
 }
