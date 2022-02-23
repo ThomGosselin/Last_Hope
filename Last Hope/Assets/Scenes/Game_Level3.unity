@@ -216,6 +216,7 @@ MonoBehaviour:
   Xbtn: {fileID: 189027928}
   Ingrediant: {fileID: 157691919}
   hitbox: {fileID: 963893637}
+  paper: {fileID: 885625673}
 --- !u!1 &23319682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,9 +1148,10 @@ GameObject:
   - component: {fileID: 135882828}
   - component: {fileID: 135882829}
   - component: {fileID: 135882830}
+  - component: {fileID: 135882831}
   m_Layer: 0
   m_Name: xBtn
-  m_TagString: Untagged
+  m_TagString: XBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,6 +1236,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &135882831
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135882827}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &136076180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjName: Ingrediant1
   ObjIndex: 0
-  ObjIcon: {fileID: 21300000, guid: 79f8a19d9f575a1449fe5dec05730a75, type: 3}
+  ObjIcon: {fileID: 2536355152744915353, guid: 79f8a19d9f575a1449fe5dec05730a75, type: 3}
 --- !u!61 &157691921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1836,10 +1864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c990464657bf74ea663cdee1665705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeValue: 600
   timeText: {fileID: 218709630}
-  backgroundTimer: {fileID: 0}
-  duration: 900
-  currentTime: 10
 --- !u!114 &218709630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12687,7 +12713,7 @@ Transform:
   m_GameObject: {fileID: 358350279}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 135882828}
   m_Father: {fileID: 739145463}
@@ -16188,6 +16214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 1454325544}
   Player: {fileID: 265063520}
+  Background: {fileID: 0}
 --- !u!114 &764152375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17089,7 +17116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &885625674
 Transform:
   m_ObjectHideFlags: 0
@@ -18542,7 +18569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjName: Ingrediant3
   ObjIndex: 0
-  ObjIcon: {fileID: 21300000, guid: 41906a44bbca9704db4997dcb1b5b89d, type: 3}
+  ObjIcon: {fileID: 7252634875890784506, guid: 41906a44bbca9704db4997dcb1b5b89d, type: 3}
 --- !u!61 &1114908786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26120,7 +26147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjName: Ingrediant2
   ObjIndex: 0
-  ObjIcon: {fileID: 21300000, guid: 74b3efdf673d72440bf1dfa349dbe22e, type: 3}
+  ObjIcon: {fileID: -2207491937580436707, guid: 74b3efdf673d72440bf1dfa349dbe22e, type: 3}
 --- !u!61 &2030711805
 BoxCollider2D:
   m_ObjectHideFlags: 0

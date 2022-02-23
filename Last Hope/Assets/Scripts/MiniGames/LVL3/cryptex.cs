@@ -36,6 +36,8 @@ public class cryptex : MonoBehaviour
     [SerializeField] private GameObject Ingrediant;
     [SerializeField] private BoxCollider2D hitbox;
 
+    [SerializeField] private GameObject paper;
+
 
     public void Index1Up()
     {
@@ -136,6 +138,7 @@ public class cryptex : MonoBehaviour
         {
             player.SetActive(true);
             Ingrediant.SetActive(true);
+            paper.SetActive(true);
             GameGrid.SetActive(false);
             Xbtn.SetActive(false);
             Destroy(hitbox);
