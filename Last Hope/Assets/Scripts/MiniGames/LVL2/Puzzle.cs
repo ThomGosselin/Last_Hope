@@ -22,6 +22,7 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private GameObject Xbtn;
     [SerializeField] private GameObject Key;
     [SerializeField] private BoxCollider2D hitbox;
+    [SerializeField] private GameObject zone;
 
 
 
@@ -42,7 +43,7 @@ public class Puzzle : MonoBehaviour
         for(int y = 2; y >= 0; y--)
         for(int x = 0; x <= 2; x++)
             {
-                numberBox box = Instantiate(boxPrefab, parent.transform);
+                numberBox box = Instantiate(boxPrefab, zone.transform);
                 box.Init(x, y, n + 1, sprites[n], CLickToSwap );
                 boxes[x, y] = box;
                 Originalboxes = (numberBox[,])boxes.Clone();

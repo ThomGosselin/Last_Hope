@@ -22,7 +22,6 @@ public class CloseImg : MonoBehaviour
             if (hit.collider.CompareTag("XBtn"))
             {
                 imgCadenas.SetActive(false);
-                xBtn.SetActive(false);
                 player.SetActive(true);
             }
             else

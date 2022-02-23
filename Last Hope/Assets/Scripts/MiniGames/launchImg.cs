@@ -35,7 +35,6 @@ public class launchImg : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 imgCadenas.SetActive(true);
-                xBtn.SetActive(true);
                 player.SetActive(false);
                 isThereAcollision = false;
                 if (toDestroyHitBox)

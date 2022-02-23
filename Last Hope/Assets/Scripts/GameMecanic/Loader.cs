@@ -21,6 +21,10 @@ public static class Loader
         CinematiqueLVL1To2,
         CinemativeLvl2To3,
         Game_Level3,
+        CinematiqueVictoire,
+        GameOver,
+        GameOverMenu,
+        Credits,
     }
 
     private static Action onLoaderCallback;

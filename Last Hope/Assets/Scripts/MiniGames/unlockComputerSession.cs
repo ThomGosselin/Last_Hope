@@ -13,6 +13,8 @@ public class unlockComputerSession : MonoBehaviour
 
     private string userPassword;
     public string passcode;
+    public int passwordLength;
+    public int userPassLength;
     public GameObject currentcomptuerScreen;
     public GameObject desktop;
     public GameObject cameraScreen;
@@ -21,7 +23,14 @@ public class unlockComputerSession : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        userPassword = userInput.text;
+        if (userInput.text.Length == passwordLength)
+        {
+            checkWin();
+        }
+    }
+
+    private void checkWin()
+    {
         if (userPassword == passcode)
         {
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
@@ -29,8 +38,10 @@ public class unlockComputerSession : MonoBehaviour
             currentcomptuerScreen.SetActive(false);
             cameraScreen.SetActive(true);
             xBtn.SetActive(true);
-
         }
-        
+        else
+        {
+            userInput.text = "";
+        }
     }
 }

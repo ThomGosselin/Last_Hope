@@ -35,4 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game_Level3.unity
     guid: 695bcd8bce26fd94fb0583b73b8a742f
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 9d3fd06e2196d784f987244bc26d3f08
+  - enabled: 1
+    path: Assets/Scenes/GameOverMenu.unity
+    guid: 610719ef763d58c4ba0209afc2d246ae
+  - enabled: 1
+    path: Assets/Scenes/CinematiqueVictoire.unity
+    guid: 5b203aecd6460a249915fcbe05e3f33a
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: e01518ce4209b204c955c3980da9eb81
   m_configObjects: {}
