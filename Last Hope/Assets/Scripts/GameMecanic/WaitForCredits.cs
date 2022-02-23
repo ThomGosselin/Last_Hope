@@ -12,6 +12,6 @@ public class WaitForCredits : MonoBehaviour
     IEnumerator waitForVideoToEnd()
     {
         yield return new WaitForSeconds(38);
-        Loader.Load(Loader.Scene.Main_Menux);
+        Loader.Load(Loader.Scene.Main_Menu);
     }
 }
