@@ -17,6 +17,7 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     public string UserVoiceMailPassWord;
     public int CurrentPasswordLenght;
     public int lenghtOfCurrentTry;
+    public GameObject Player;
     void Start()
     {
         CurrentPasswordLenght = VoiceMailPassword.Length;
@@ -46,6 +47,8 @@ public class ReconnaissanceVocalLVL3 : MonoBehaviour
     private void OpenDoorLvl3()
     {
         secretDoor.transform.position = new Vector3(-1.01F, 3.1f, -100f);
+        Player.SetActive(true);
+        
     }
 
     private void AddToVoiceMailPassword7()

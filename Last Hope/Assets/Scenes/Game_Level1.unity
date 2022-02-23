@@ -2490,7 +2490,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  lvlSounds: {fileID: 0}
+  lvlSounds: {fileID: 110480089}
 --- !u!4 &469808371
 Transform:
   m_ObjectHideFlags: 0
@@ -4534,7 +4534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1064330690}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &557495142
 BoxCollider2D:
@@ -4625,7 +4625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb43a88cc000e84a96ee7c644592a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imgCadenas: {fileID: 1701757955}
+  imgCadenas: {fileID: 90573548}
   player: {fileID: 1886971559}
   xBtn: {fileID: 557495140}
 --- !u!1 &582310351
@@ -10358,8 +10358,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_Children:
-  - {fileID: 1701757956}
   - {fileID: 557495141}
+  - {fileID: 1701757956}
   - {fileID: 1110111727}
   m_Father: {fileID: 592662902}
   m_RootOrder: 3
@@ -10451,6 +10451,7 @@ MonoBehaviour:
   Player: {fileID: 1886971559}
   hitBox: {fileID: 1040852031}
   codes: {fileID: 0}
+  xBtn: {fileID: 557495140}
 --- !u!1 &1070540482
 GameObject:
   m_ObjectHideFlags: 0
@@ -15279,7 +15280,7 @@ Transform:
   - {fileID: 778439447}
   - {fileID: 177087417}
   m_Father: {fileID: 1064330690}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710287845
 GameObject:

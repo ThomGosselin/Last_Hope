@@ -20,6 +20,7 @@ public class unlockVault : MonoBehaviour
     public GameObject Player;
     public BoxCollider2D hitBox;
     public GameObject codes;
+    public GameObject xBtn;
 
     void Start()
     {
@@ -86,7 +87,7 @@ public class unlockVault : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
             if (lifes != 0)
             {
@@ -94,12 +95,14 @@ public class unlockVault : MonoBehaviour
                 Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
                 RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+
                 if (hit.collider.CompareTag("selectedCricles"))
                 {
                     FindObjectOfType<AudioManager>().Play("goodChoice");
                     hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
                     selectedCircleTab.Remove(hit.collider.gameObject);
-                    if (selectedCircleTab.Count == 0) {
+                    if (selectedCircleTab.Count == 0)
+                    {
                         gameGrid.SetActive(false);
                         Player.SetActive(true);
                         FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
@@ -107,16 +110,22 @@ public class unlockVault : MonoBehaviour
                         Destroy(hitBox);
 
                     }
-                    else if (hit.collider.CompareTag("circles"))
-                    {
-                        FindObjectOfType<AudioManager>().Play("badChoice");
-                        hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-                        lifes = lifes - 1;
-                    }
-                    else if (!hit)
-                    {
-                        return;
-                    }
+                }
+                else if (hit.collider.CompareTag("circles"))
+                {
+                    FindObjectOfType<AudioManager>().Play("badChoice");
+                    hit.collider.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                    lifes = lifes - 1;
+                }
+                else if (hit.collider.CompareTag("XBtn"))
+                {
+                    xBtn.SetActive(false);
+                    gameGrid.SetActive(false);
+                    Player.SetActive(true);
+                }
+                else if (!hit)
+                {
+                    return;
                 }
                 else
                 {
@@ -124,10 +133,9 @@ public class unlockVault : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play("ErrorMiniGame");
                     StartGame();
                 }
-
-            }
-
         }
 
     }
+
+   }
 }
