@@ -29,6 +29,7 @@ public class Uranium : MonoBehaviour
                 Player.SetActive(true);
                 xBtn.SetActive(false);
                 Ingrediant.SetActive(true);
+                FindObjectOfType<LastEnigmeManager>().Enigme3Complete = true;
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
 
             }

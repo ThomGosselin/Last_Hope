@@ -143,6 +143,7 @@ public class cryptex : MonoBehaviour
             Xbtn.SetActive(false);
             Destroy(hitbox);
             FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+            FindObjectOfType<LastEnigmeManager>().Enigme1Complete = true;
         }
     }
 }

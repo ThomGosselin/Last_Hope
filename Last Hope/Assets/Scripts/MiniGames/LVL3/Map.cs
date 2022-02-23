@@ -6,7 +6,8 @@ public class Map : MonoBehaviour
 {
     public GameObject BigMap;
     public GameObject Etagere;
-    public GameObject xBtn;
+    public GameObject xBtnMap;
+    public GameObject xBtnEtagere;
 
 
     // Update is called once per frame
@@ -26,6 +27,8 @@ public class Map : MonoBehaviour
             {
                 BigMap.SetActive(false);
                 Etagere.SetActive(true);
+                xBtnMap.SetActive(false);
+                xBtnEtagere.SetActive(true);
                 FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
             }
         }

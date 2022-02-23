@@ -27,6 +27,7 @@ public class CorrectNumberGame : MonoBehaviour
             Player.SetActive(true);
             xBtn.SetActive(false);
             Ingrediant.SetActive(true);
+            FindObjectOfType<LastEnigmeManager>().Enigme2Complete = true;
         }
     }
 

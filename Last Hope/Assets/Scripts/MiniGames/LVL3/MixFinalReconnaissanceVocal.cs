@@ -63,7 +63,7 @@ public class MixFinalReconnaissanceVocal : MonoBehaviour
         {
            if(UserMagicWord == MagicWord)
            {
-                Debug.Log("WIN");
-           }
+            Loader.Load(Loader.Scene.CinematiqueVictoire);
+        }
         }
     }
