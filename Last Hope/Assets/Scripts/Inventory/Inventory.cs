@@ -85,6 +85,9 @@ public class Inventory : MonoBehaviour
                         case "Lunettes":
                             FindObjectOfType<AudioManager>().Play("Lunette");
                             break;
+                        case "Gant":
+                            FindObjectOfType<AudioManager>().Play("Gant");
+                            break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
