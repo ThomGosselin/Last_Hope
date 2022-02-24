@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUi: {fileID: 912081141}
-  Player: {fileID: 0}
+  Player: {fileID: 1886971559}
   Background: {fileID: 1689390652}
 --- !u!114 &176668408
 MonoBehaviour:

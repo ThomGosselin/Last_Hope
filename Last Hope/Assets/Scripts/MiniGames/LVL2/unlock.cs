@@ -46,7 +46,6 @@ public class unlock : MonoBehaviour
 
     public void AddLeft()
     {
-        Debug.Log("Left");
         userInputCode = userInputCode + "left";
         currentNbrOfKey++;
         if (currentNbrOfKey== nbrOfKey)
@@ -56,7 +55,6 @@ public class unlock : MonoBehaviour
     }
     public void AddDown()
     {
-        Debug.Log("Down");
         userInputCode = userInputCode + "down";
         currentNbrOfKey++;
         if (currentNbrOfKey == nbrOfKey)
@@ -66,7 +64,6 @@ public class unlock : MonoBehaviour
     }
     public void AddUp()
     {
-        Debug.Log("Up");
         userInputCode = userInputCode + "up";
         currentNbrOfKey++;
         if (currentNbrOfKey == nbrOfKey)
@@ -76,7 +73,6 @@ public class unlock : MonoBehaviour
     }
     public void AddRight()
     {
-        Debug.Log("Right");
         userInputCode = userInputCode + "right";
         currentNbrOfKey++;
         if (currentNbrOfKey == nbrOfKey)
@@ -87,7 +83,6 @@ public class unlock : MonoBehaviour
     public void closeGame()
     {
         userInputCode = "";
-        Debug.Log("end");
         Player.SetActive(true);
         gameGrid.SetActive(false);
         Xbtn.SetActive(false);
@@ -107,7 +102,6 @@ public class unlock : MonoBehaviour
     {
         if (userInputCode == Code)
         {
-            Debug.Log("got it");
             ComputerHitBox.isTrigger = true;
             closeGame();
         }

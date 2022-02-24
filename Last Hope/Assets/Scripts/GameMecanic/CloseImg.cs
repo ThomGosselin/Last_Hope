@@ -18,16 +18,16 @@ public class CloseImg : MonoBehaviour
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-
+            if (!hit)
+            {
+                return;
+            }
             if (hit.collider.CompareTag("XBtn"))
             {
                 imgCadenas.SetActive(false);
                 player.SetActive(true);
             }
-            else
-            {
-                return;
-            }
+          
         }
 
     }
