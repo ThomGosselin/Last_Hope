@@ -23,7 +23,7 @@ public class Map : MonoBehaviour
             {
                 return;
             }
-            if (hit.collider.CompareTag("ClickMap"))
+            if (hit.collider.CompareTag("clickMap"))
             {
                 BigMap.SetActive(false);
                 Etagere.SetActive(true);

@@ -114,7 +114,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 32
         height: 16
       alignment: 2
       pivot: {x: 0.5, y: 1}
@@ -125,27 +125,6 @@ TextureImporter:
       bones: []
       spriteID: cb67056e7592a5740800000000000000
       internalID: 5141467382099769020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: commode_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fec36049e96ffcf0800000000000000
-      internalID: -216337806561915144
       vertices: []
       indices: 
       edges: []

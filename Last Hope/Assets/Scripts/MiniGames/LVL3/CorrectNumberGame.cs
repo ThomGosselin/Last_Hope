@@ -21,14 +21,20 @@ public class CorrectNumberGame : MonoBehaviour
     {
         if (NumberInputFromUser.text == NumberToFind)
         {
-            FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
-            GameGrid.SetActive(false);
-            Canvas.SetActive(false);
-            Player.SetActive(true);
-            xBtn.SetActive(false);
-            Ingrediant.SetActive(true);
-            FindObjectOfType<LastEnigmeManager>().Enigme2Complete = true;
+            checkWin();
         }
+    }
+
+    private void checkWin()
+    {
+        FindObjectOfType<AudioManager>().Play("SuccedMiniGame");
+        GameGrid.SetActive(false);
+        Canvas.SetActive(false);
+        Player.SetActive(true);
+        xBtn.SetActive(false);
+        Ingrediant.SetActive(true);
+        FindObjectOfType<LastEnigmeManager>().Enigme2Complete = true;
+        NumberInputFromUser.text = "";
     }
 
 }

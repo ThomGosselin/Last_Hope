@@ -23,7 +23,7 @@ public class Uranium : MonoBehaviour
             {
                 return;
             }
-            if (hit.collider.CompareTag("ClickMap"))
+            if (hit.collider.CompareTag("IngrediantClick"))
             {
                 Etagere.SetActive(false);
                 Player.SetActive(true);
