@@ -82,6 +82,9 @@ public class Inventory : MonoBehaviour
                         case "PaperToFind":
                             FindObjectOfType<SwapWallNumber>().Swap_Wall();
                             break;
+                        case "Lunettes":
+                            FindObjectOfType<AudioManager>().Play("Lunette");
+                            break;
                     }
                     FindObjectOfType<AudioManager>().Play("InvPick");
                     addToInventory();
