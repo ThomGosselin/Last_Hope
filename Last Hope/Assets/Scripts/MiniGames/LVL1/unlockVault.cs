@@ -22,10 +22,13 @@ public class unlockVault : MonoBehaviour
     public GameObject codes;
     public GameObject xBtn;
 
-    void Start()
+
+    private void OnBecameVisible()
     {
         StartGame();
+        xBtn.SetActive(true);
     }
+
 
     public void StartGame()
     {
