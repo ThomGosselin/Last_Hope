@@ -46,7 +46,7 @@ public class unlockVault : MonoBehaviour
 
     IEnumerator waitForStartGames()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         for (i = 0; i < circleTab.Length; i++)
         {
             circleTab[i].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
